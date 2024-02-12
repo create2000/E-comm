@@ -1,0 +1,53 @@
+.one {
+    
+    display: flex;
+    align-items: center;
+    margin: 2rem 3rem;
+    gap: 6rem;
+    
+}
+.Menu-Nav-list {
+    
+    display: flex;
+    flex-direction: row;
+    gap: 2.5rem;
+       
+}
+
+.Log {
+    font-size: 13px;
+    margin-left: 5rem;
+}
+
+.Log span:hover {
+    color: orangered;
+}
+
+@media (min-width: 993px) {
+    .List-icon {
+            background-color: brown;
+            display: none;
+        }
+
+}
+
+
+
+@media (max-width:991px) {
+    img {
+        margin-left: 40%;
+        margin-right: 45%;
+        
+        
+        
+    }
+    .Menu-Nav-list {
+        display: none;
+    }
+
+    .Log {
+        display: none;
+    }
+
+  
+}

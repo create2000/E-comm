@@ -1,0 +1,159 @@
+    @media (max-width: 991px) {
+
+    }
+    
+section {
+    background-color: var(--second-bg-color);
+    height: 30vh;    
+}
+    
+.Header-one p{
+    font-size: smaller;
+   
+}
+.Header-one{
+    padding-top: 10px;
+    margin-left: 3rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.Header-one-span {
+    font-weight: 700;
+}
+
+.Header-one p {
+    font-size: 12px;
+    ;
+}
+
+.Header-span {
+    display: flex;
+}
+
+.Header-span p {
+    margin-right: 2rem;
+   
+}
+
+.dropdown-content ul {
+    list-style-type: none;   
+}
+
+.dropdown-content li {
+    color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  cursor: pointer;
+}
+
+.par-header:hover .dropdown-content {
+    display: block;
+}
+
+.par-header {
+    position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+        display: none;
+        position: absolute;
+        background-color: #f1f1f1;
+        min-width: 160px;
+        box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+        z-index: 1;
+}
+
+.dropdown-content li:hover {
+    background-color: orangered;
+}
+
+.second-dropdown-content ul {
+    list-style-type: none;
+}
+
+.second-dropdown-content li {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+    cursor: pointer;
+    
+}
+
+.second-par:hover .second-dropdown-content {
+    display: block;
+    
+}
+
+.second-par {
+    position: relative;
+    display: inline-block;
+}
+
+.second-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f1f1f1;
+    min-width: 160px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+}
+
+.second-dropdown-content li:hover {
+    background-color: orangered;
+}
+
+.List-icon {
+    background-color: red;
+}
+
+@media (min-width:993px) {
+    .Account {
+        display: none;
+    }
+}
+
+@media (max-width: 992px) {
+    .Header-paragraph {
+        display: none;
+    }
+    .Header-one {
+        position: relative;
+    }
+
+    .Header-span {
+        margin-left: 70%;
+        position: absolute;
+    }
+
+    .Account-info {
+        display: flex;
+        flex-direction: row;
+        width: 8rem;
+        align-items: center;
+        gap: 0.1rem;
+        z-index: 1;
+        margin-left: 2rem;
+    }
+
+    .Account-icon {
+        font-size: 10px;
+    }
+
+    .Account ul {
+
+        background-color: white;
+        color: black;
+        padding: 2rem;
+        display: block;
+        position: absolute;
+        z-index: 1;
+    }
+};
+
+     
+
+    

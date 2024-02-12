@@ -1,0 +1,424 @@
+@media (max-width: 1300px) {
+
+.Deal-Deal-one {
+    display: flex;
+    align-items: center;
+    margin-top: 18rem;
+    justify-content: space-between;
+    
+}
+.Deals {
+    color: white;
+    margin-left: 20rem;
+    margin-top: 8rem;
+    background-color: rgb(58, 55, 55);
+    padding: 0.5rem 1rem;
+    min-width: 10vw;
+    border-radius: 0.3rem;
+   
+  }
+  
+  .arr-icons {
+      float: right;
+      margin-right: 7rem;
+      margin-top: 8rem;
+      display: flex;
+      gap: 2rem;
+      font-size: 1.7rem;
+      color: rgb(219, 213, 213);
+    
+   
+}
+
+.Deal-one {
+    display: flex;
+    align-items: center;
+}
+
+.Deal-one-img {
+    min-width: 20vw;
+    height: 30vh;
+    margin-left: 30rem;
+    
+   
+    
+}
+
+.Deal-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 55rem;
+    min-width: 12vw;
+    position: absolute;
+    margin-top: 1rem;
+    color: black;
+    
+}
+
+.par-2 {
+    opacity: 60%;
+    font-size: 14px;
+    width: 30vw;
+    margin-top: 0.5rem;
+    line-height: 2vh;
+}
+
+.par-1 {
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.span-1 {
+    opacity: 50%;
+    font-size: smaller;
+    text-decoration: line-through;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.AvailNum-1 {
+    color: orangered;
+    font-weight: 600;
+}
+
+.AvailNum-2 {
+    font-weight: 600;
+}
+
+.empty-span {
+    background-image: linear-gradient(to right, orangered 50%, rgba(252, 250, 250, 0.958) 50%);
+    background-color: orangered;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    max-width: 15rem; 
+    height: 0.8rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.timer {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem; 
+    border-radius: 50%;
+    font-size: small;
+    display: inline-block; 
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+}
+
+
+.days  {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+
+}
+
+.seconds {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+    
+}
+
+.week-days {
+    opacity: 50%;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+
+.Deal-two {
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+}
+
+.Deal-three {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    
+}
+
+.Deal-four {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .deal-container {
+    position: absolute;
+    top: -8.5rem;
+    left: -1.5rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    
+  }
+  
+  .deal-container.active {
+    opacity: 1;
+  }
+
+  .banner-7 {
+    width: 68vw;
+    margin-left: 22rem;
+    margin-top: 20rem;
+}
+
+
+}
+
+  
+  
+  
+  
+  
+  @media (max-width: 991px) {
+      
+      
+      .Deals {
+  color: white;
+  margin-left: 22rem;
+  margin-top: 11rem;
+  background-color: rgb(58, 55, 55);
+  padding: 0.5rem 1rem;
+  min-width: 15vw;
+  border-radius: 0.3rem;
+ 
+}
+
+.All-deal {
+    margin-top: 20rem;
+    color: black;
+    
+    
+}
+.arr-icons {
+    float: right;
+    margin-left: 15rem;
+    margin-top: 11rem;
+    display: flex;
+    gap: 2rem;
+    font-size: 1.7rem;
+    color: rgb(219, 213, 213);
+    /* position: absolute; */
+   
+}
+
+.Deal-Deal-one {
+    display: flex;
+    align-items: center;
+      
+    
+}
+
+.Deal-one {
+    display: flex;
+    align-items: center;
+}
+
+.Deal-one-img {
+    min-width: 20vw;
+    height: 30vh;
+}
+
+.Deal-text {
+    display: flex;
+    flex-direction: column;
+    margin-left: 47rem;
+    min-width: 12vw;
+    position: absolute;
+    margin-top: 1rem;
+    
+}
+
+.par-2 {
+    opacity: 60%;
+    font-size: 14px;
+    width: 30vw;
+    margin-top: 0.5rem;
+    line-height: 2vh;
+}
+
+.par-1 {
+    color: orangered;
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+
+.span-1 {
+    opacity: 50%;
+    font-size: smaller;
+    text-decoration: line-through;
+}
+
+.count {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    gap: 5rem;
+    margin-top: 2rem;
+}
+
+.AvailNum-1 {
+    color: orangered;
+    font-weight: 600;
+}
+
+.AvailNum-2 {
+    font-weight: 600;
+}
+
+.empty-span {
+    background-image: linear-gradient(to right, orangered 50%, rgba(252, 250, 250, 0.958) 50%);
+    background-color: orangered;
+    border-radius: 0.5rem;
+    margin-top: 0.5rem;
+    max-width: 15rem; 
+    height: 0.8rem;
+}
+
+.countdown {
+    display: flex;
+    gap: 1rem;
+    margin-top: 1rem;
+}
+
+.timer {
+    background-color: whitesmoke;
+    color: black;
+    font-weight: 600;
+    padding: 0.8rem; 
+    border-radius: 50%;
+    font-size: small;
+    display: inline-block; 
+    width: 2.8rem;
+    height: 2.8rem;
+    text-align: center;
+}
+
+
+.days  {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+}
+
+.hours {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+}
+
+.minutes {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+
+}
+
+.seconds {
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+    align-items: center;
+    
+}
+
+.week-days {
+    opacity: 50%;
+    font-weight: 500;
+    font-size: smaller;
+}
+
+
+.Deal-two {
+    margin-top: 9rem;
+    display: flex;
+    align-items: center;
+    margin-left: -7rem;
+    
+}
+
+.Deal-three {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    margin-left: -7rem;
+}
+
+.Deal-four {
+    margin-top: 10rem;
+    display: flex;
+    align-items: center;
+    margin-left: -7rem;
+}
+
+.slideshow-container {
+    position: relative;
+    width: 100%;
+    height: 100%;
+  }
+  
+  .deal-container {
+    position: absolute;
+    top: -8.5rem;
+    left: -1.5rem;
+    width: 100%;
+    height: 100%;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+  }
+  
+  .deal-container.active {
+    opacity: 1;
+  }
+
+  .banner-7 {
+    width: 55vw;
+    margin-top: 22rem;
+  }
+
+}

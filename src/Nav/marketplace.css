@@ -1,0 +1,26 @@
+ .market-list {
+    list-style-type: none;
+    margin-bottom: 5px;
+    margin-top: 5px;
+    
+}
+
+.market-list:hover {
+    cursor: pointer;
+    color: orangered;
+}
+
+.market-ul {
+    position: absolute;
+    border: 2px solid rgba(0, 0, 0, 0.1);
+    width: 25vw;
+    background-color: white;
+    color: black;
+    padding: 2rem 5rem 3rem 2rem;
+    font-size: smaller;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    right: rem;
+    margin-top: 10px;
+    z-index: 2;
+    
+} 

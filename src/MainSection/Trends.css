@@ -1,0 +1,267 @@
+    .Trends {
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 55rem;
+        min-width: 34.5rem;
+        margin-top: -145rem;  
+        position: absolute;
+        margin-left: 21rem;
+        
+    }
+    
+    .trend-head {
+        margin-left: 1rem;
+        background-color: rgb(21, 9, 55);
+        color: white;
+        padding: 0.7rem 1.5rem;
+    }
+    
+        /* .Array-list-vertical {
+        display: block;
+        color: black;
+        margin-left: 0.5rem;
+        color: gray; 
+    } */
+
+    /* .Array-list-horizontal {
+        display: flex;
+        list-style-type: none;
+        padding: 0;
+    }  */
+    
+    .Array-list {
+        color: gray;
+    } 
+    
+    .Array-list:hover {
+        color: orangered;
+        cursor: pointer;
+    }
+
+    .input-arrow {
+        
+        /* flex-direction: row;
+        align-items: center;
+        margin-top: -19rem;
+        margin-right: -20rem; */
+        
+    }
+    .Array-div ul {
+        display: flex;
+        flex-wrap: wrap; 
+        float: right;
+        justify-content: space-between; 
+        list-style: none;
+        padding: 0;
+        margin: 0;
+        gap: 1rem;
+        }
+    
+    
+    .red {
+        color: red;
+    }
+    
+    .image-container {
+        position: relative;
+        margin-left: 10rem;
+        margin-top: -7rem;
+        /* Adjust height as needed */
+        }
+        
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: -7.5rem;
+        width: 10rem;
+        height: 10rem;
+        opacity: 0;
+        transition: opacity 0.9s ease; 
+        }
+        
+    .image-container img:nth-child(1) {
+        opacity: 1; 
+        }
+        
+    .image-container:hover img:nth-child(2) {
+        opacity: 1; /* Second image becomes visible on hover */
+        }
+        
+    .image-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 55rem;
+        height: 24rem;
+        justify-content: space-between; 
+        margin-top: -140%;
+        margin-right: 6rem;
+        float: right;        
+    }
+    .image-div-first-img {
+        width: 16rem;
+    }
+    .image-div-second-img {
+        width: 16rem;
+    }
+
+
+
+    @media only screen and (min-width: 776px) and (max-width: 991px) {
+
+        .Trends {    
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 35.3rem;
+        min-width: 34.5rem;
+        margin-top: -145rem;  
+        position: absolute;
+      
+    }
+    
+    .text {
+        background-color: red;
+        opacity: 100;
+    }
+    
+    .trend-head {
+        margin-top: 22rem;
+        padding: 0.7rem;
+        margin-left: 1rem;
+    }
+    
+    .trend-input {
+        width: 12rem;
+        margin-right: 0rem;
+        font-size: 15px;
+    }
+    
+    .dr-arrow {
+        background-color: rgb(201, 195, 195);
+        font-size: 35px;
+        padding: 0.7rem;
+        margin-right: rem;
+        margin-top: 1.1rem;   
+    }
+    
+    .input-arrow {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 21rem;
+        margin-right: 1.5rem; 
+        
+    }
+    
+    .Array-list {
+        margin-left: 0.5rem;
+        color: gray; 
+        line-height: 5px;
+        
+    }
+    
+    .Array-div ul {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        justify-content: space-between; 
+        list-style: none;
+        
+      }
+    
+    .Array-list:hover {
+        color: orangered;
+        
+    }
+    
+    .Array-div {    
+        margin-top: 17rem;
+        position: absolute;
+        background-color: rgb(245, 244, 244);
+        padding: 1rem 8rem 1rem 1rem;
+        border: 1px light black;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        border-top: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+    
+    .red {
+        color: red;
+    }
+    
+    /* .image-container {    
+        position: relative;
+        
+      }
+      
+    .image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        opacity: 0;
+        transition: opacity 0.9s ease;
+        
+      }
+      
+      .image-container img:nth-child(1) {
+        opacity: 1; 
+      }
+      
+      .image-container:hover img:nth-child(2) {
+        opacity: 1; 
+      }
+      
+      .image-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 35rem;
+        height: 0rem;
+        justify-content: space-between; 
+        margin-top: -150%;
+        
+        
+     
+    }
+    .image-div-first-img {
+        width: 16rem;
+        
+    }
+    
+    .image-div-second-img {
+        width: 16rem;
+    } */
+
+    .image-container {
+        margin-left: 10rem;
+        margin-top: -7rem;
+    }
+
+    .image-container img {
+        width: 10rem;
+        height: 10rem;
+    };
+
+    .image-div {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 33rem;
+        height: 22rem;
+        
+        margin-top: -90rem;
+        
+        
+    }
+    }
+    
+    

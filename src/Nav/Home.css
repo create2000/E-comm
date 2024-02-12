@@ -1,0 +1,66 @@
+.Home-Nav-Div {
+    /* Position the dropdown container relative for positioning */
+    position: relative;
+  }
+.Home-Nav-Div h5:hover {
+  color: orangered;
+}
+  .Home-Nav { 
+    position: absolute;
+    background-color: #fff;   
+    margin-top: 2rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 2rem;
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    color: gray;
+    width: 55vw;
+    line-height: 2rem;   
+    z-index: 2; 
+   
+  
+  }
+  
+  
+  .Home-Nav-Div:hover .Home-Nav {
+    /* Show the dropdown content on hover */
+    display: flex;
+    justify-content: space-between;
+    font-size: small;
+    cursor: pointer;
+    
+  }
+
+  .Home-Nav:hover {
+    color: orangered;
+   
+  }
+
+  @media (max-width: 992px) {
+    .Home-arr {
+      display: none;
+    }
+
+    .Home-Nav-Div:hover .Home-Nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    font-size: small;
+    cursor: pointer;
+    }
+
+    .Home-Nav { 
+      position: absolute;
+      background-color: #fff;   
+      margin-top: 0rem;
+      margin-left: -0.5rem;
+      border: 1px solid rgba(0, 0, 0, 0.1);
+      padding: 2rem 3rem 2rem 2rem;
+      box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+      color: gray;
+      width: 27.5vw;
+      line-height: 2rem;   
+      z-index: 2; 
+     
+    
+    }
+  }

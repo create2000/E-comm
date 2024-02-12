@@ -1,0 +1,136 @@
+.Slide {   
+    display: none;  /* Initially hide all slides */
+    width: 600px;
+    margin-left: 20rem;
+    margin-top: 4rem;
+      
+}
+  .Slide.active {
+    display: block; /* Show the active slide */
+    
+  }
+
+.image-slide {
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: -56rem;
+    
+}
+
+.banner-image {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    margin-right: 4rem;
+    gap: 10px;
+    margin-top: -17.6rem;
+    
+    
+    
+}
+
+.banner-logo-one {
+    
+    width: 250px;
+    transition: filter 0.3s;
+    margin-right: 2rem;
+}
+
+.banner-logo-two {
+    width: 250px;
+    transition: filter 0.3s;
+    margin-right: 2rem;
+}
+
+.Gift-card {
+    width: 68vw;
+    height: 4vh;
+    margin-left: 20rem;
+    margin-top: 2rem;
+}
+
+.design-card {
+    
+    margin-bottom: 0rem;
+    bottom: 18rem;
+    margin-left: 3rem;
+    width: 15rem;
+}
+
+.banner-logo-one:hover {
+    filter: grayscale(70%); /* Set the image to grayscale on hover */
+  }
+.banner-logo-two:hover {
+    filter: grayscale(70%); /* Set the image to grayscale on hover */
+}
+  
+.banner-logo-one::before,
+.banner-logo-two::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    width: 50%;
+    background: linear-gradient(to right, rgba(154, 86, 86, 0.7), rgba(255, 255, 255, 0));
+    transition: width 0.5s;
+    pointer-events: none; /* Ignore pointer events on pseudo-elements */
+  }
+  
+.banner-logo-one .banner-logo-two:hover::before {
+    width: 0; /* Shrink the gradient from the left on hover */
+  }
+  
+.banner-logo-one .banner-logo-two:hover::after {
+    width: 0; /* Shrink the gradient from the right on hover */
+  }
+
+.banner-logo {
+    cursor: pointer;
+    
+}
+
+
+
+@media (max-width: 991px) {
+
+.design-card {
+    margin-top: 2rem ;
+    margin-left: 5rem;
+    width: 14rem;
+    position: absolute;
+}
+.Gift-card {
+    display: none;
+}
+
+.image-slide {
+    display: flex;
+    flex-shrink: none;
+    flex-direction: column;
+    gap: 2rem;
+    margin-top: 2rem;
+    margin-left: 2rem;
+}
+
+.Slide {
+    width: 500px;
+
+}
+.banner-image {
+    display: flex;
+    flex-direction: row;  
+    width: 2px;
+    margin-right: 37rem;
+}
+.banner-logo-one {
+    width: 230px;
+    margin-top: 20rem;   
+}
+
+.banner-logo-two {
+    width: 230px;
+    margin-top: 20rem;    
+}
+
+}

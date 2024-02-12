@@ -1,0 +1,82 @@
+.Home-Nav-Div {
+    /* Position the dropdown container relative for positioning */
+    position: relative;
+  }
+
+.First,
+.Second,
+.Third,
+.Fourth {
+  list-style-type: none;
+  line-height: 2rem;
+  padding: 0;
+  margin-top: 10px;
+  width: 15vw;
+  color: gray;
+ 
+  
+}
+.First li:hover,
+.Second li:hover,
+.Third li:hover,
+.Fourth li:hover {
+  color: orangered;
+  cursor: pointer;
+ 
+}
+
+
+.Tableau {
+  position: absolute;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  width: 70vw;
+  background-color: white;
+  color: black;
+  padding: 0 0 3rem 2rem;
+  font-size: smaller;
+  box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+  left: -6rem;
+  z-index: 2;
+}
+
+.momo {
+
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  margin-top: 20px;
+}
+
+.dom {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: flex-start;
+  margin: 0px 10px;  
+}
+
+.table-body {
+  display: flex;
+  justify-content: flex-start;
+}
+
+
+@media (max-width: 991px) {
+.momo{
+  display: flex;
+  flex-direction: column;
+  margin-left: 9rem;
+  
+}
+.Tableau {
+  width: 18vw;
+  margin-left: 6rem;
+}
+.dom {
+  margin-left: -9rem;
+  margin-right: 5rem;
+}
+
+
+}
+  
