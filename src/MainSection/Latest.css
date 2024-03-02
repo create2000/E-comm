@@ -1,4 +1,4 @@
-@media (max-width: 1300px) {
+
     .class-prod {
         display: flex;
         flex-direction: row;
@@ -171,13 +171,11 @@
         margin-top: -2rem;
        
     }
-    .armchair {
-       
-        
+    .armchair {  
         margin-top: 56rem;
         margin-left: -20rem;
         width: 18.5vw;
-        height: 40vh;
+        
     }
     .armchair:hover {
         filter: grayscale(70%); 
@@ -231,7 +229,7 @@
        
     }
     
-    .newsletter-span {
+    .newsletter-span-one {
         display: flex;
         flex-direction: row;
         align-items: center;
@@ -308,7 +306,7 @@
         width: 13rem;
     } 
 
-}
+
 
 
 @media (max-width: 991px) {
@@ -545,7 +543,7 @@
    
 }
 
-.newsletter-span {
+.newsletter-span-one {
     display: flex;
     flex-direction: row;
     align-items: center;

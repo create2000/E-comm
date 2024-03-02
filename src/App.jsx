@@ -4,9 +4,10 @@ import Header from './NavTwo/Header.jsx';
 import Deals from './MainSection/Deals.jsx';
 import Latest from './MainSection/Latest.jsx';
 import Trends from './MainSection/Trends.jsx';
+import New from './MainSection/New.jsx';
+import Overlay from './MainSection/overlay.jsx';
+import ImageCarousel from './MainSection/Brands.jsx';
 
-
-import Login from "./Login/Login.jsx";
 
 // const router = createBrowserRouter([
 //   {
@@ -30,6 +31,9 @@ function App() {
       < Deals />
       < Latest />
       <Trends />
+      <New />
+      <Overlay />
+      < ImageCarousel />
     
    
     </div>

@@ -124,7 +124,7 @@ function Latest() {
     <div className="newsletter">
         <img src="/src/assets/lector.webp" alt="" className='news-img' />
          <p className='newsletter-txt'>Biten demons lector in vanderheit</p>
-        <div className="newsletter-span">
+        <div className="newsletter-span-one">
         <FaRegCalendarAlt />
             <span>January 30th, 2024</span>
         </div> 

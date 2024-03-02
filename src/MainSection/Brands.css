@@ -1,0 +1,324 @@
+.image-carousel {
+    display: flex;
+    flex-direction: row;
+    position: absolute;
+    margin-top: -15rem;
+    margin-left: ;
+}
+
+.image-containment img {
+    color: black;
+    position: relative;
+    opacity: 30%;
+    width: 11vw;
+    height: 14vh; 
+}
+
+.image-containment img:hover {
+    opacity: 80%;
+}
+
+.image-containment {
+    display: flex;
+    flex-direction: row;
+    position: relative;
+    margin-left: 0.5rem;
+    border: 2px solid rgb(242, 236, 236);
+    padding: 2rem 0.5rem ;
+    gap: 5px;
+
+}
+
+.left-arrow,
+.right-arrow {
+    color: black;
+    font-size: 2.5rem;
+    margin-top: 4rem;
+    opacity: 30%;
+}
+.left-arrow:hover,
+.right-arrow:hover {
+    opacity: 50%;
+}
+
+.left-arrow{
+    margin-left: 2rem;
+    
+}
+
+.text-span {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    color: black;
+    width: 7rem;
+}
+
+.most-viewed {
+    margin-top: 2rem;
+    
+}
+
+.most-viewed-image {
+    display: flex;
+    flex-direction: row;
+    
+}
+
+.product-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 19rem;
+
+}
+
+
+
+.product-2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    border: 2px solid whitesmoke;
+    margin-left: 3rem;
+    width: 21rem;
+    gap: 1.5rem;
+    background-color: whitesmoke;
+    
+    
+    
+    
+        
+}
+
+.product-2 > * {
+    
+    width: 8rem;
+}
+
+.productName{
+    font-size: 14px;
+    color: gray;
+}
+
+.productName:hover {
+    color: orangered;
+    cursor: pointer;
+}
+.productPrice {
+    color: orangered;
+    font: 16px san-serif;
+    font-weight: 700;
+}
+
+.button-viewed {
+    color: white;
+    background-color: rgb(48, 46, 66);
+    padding: 0.8rem 1rem;
+    margin-left: 5rem;
+    font-size: 15px;
+    font-weight: 900;
+    font-family: Tahoma, sans-serif;
+    letter-spacing: 1px;
+   
+    
+}
+
+.most-viewed-arr {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+   
+    justify-content: space-between;
+    width: ;
+    margin-top: 70rem;
+    
+}
+
+.button-next {
+    display: flex  ;  
+    font-size: 24px;
+    margin-right: 2rem;
+    gap: 1rem;
+    
+}
+
+.button-arr {
+    border-radius: 50%;
+    background-color: rgb(233, 229, 229);
+    padding: 2px;
+    font-size: 34px;
+    color: rgb(174, 169, 169);
+    
+
+}
+
+.last-hr {
+    height: 3px;
+    width: 100rem ;
+    color: gray;
+    background-color: gray;
+    opacity: 10%;
+    margin-left: 14.2rem;
+ 
+}
+
+.signUp {
+    background-color: var(--second-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2.2rem 2rem;
+    line-height: 25px;
+}
+
+.paper-plane {
+    font-size: 2.5rem;
+}
+
+.sign-col-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+
+}
+
+.sign-col-1-text {
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+}
+
+.sign-col-1-text h4 {
+    font-size: 14px;
+}
+
+.sign-col-1-text p {
+    font-size: smaller;
+}
+
+.sign-input-col input {
+    width: 23rem;
+    height: 3rem;
+    background-color: white;
+    font-weight: 505;
+    font-size: 14px;
+    opacity: 70;
+    font-family: serif;
+    border-radius: 5px 0px 0px 5px;
+}
+
+.sign-input-col button {
+    width: 7rem;
+    height: 3rem;
+    background-color: rgb(248, 85, 26);
+    margin-top: 17px;
+    color: white;
+    font-size: 13px;
+    font-weight: 600;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.sign-input-span {
+    display: flex;
+    gap: 1.5rem;
+    margin-top: 20px;
+}
+.sign-input-span span:hover {
+    color: var(--bg-color);
+    cursor: pointer;
+}
+
+.pipe {
+    font-size: 10px;
+    margin-top: -2px;
+    opacity: 60%;
+}
+
+@media only screen and (min-width: 776px) and (max-width: 990px) {
+
+    .image-carousel {
+        display: none;
+    }
+      
+    
+    .sign-col-1-text,
+    .paper-plane
+    {
+        display: none;
+    }
+
+    .signUp {
+        justify-content: center;
+        flex-direction: column;
+        
+       
+    }
+
+    .pipe {
+        display: none;
+        
+    }
+
+    .sign-input-span {
+        gap: 2rem;
+    }
+
+    .most-viewed {
+        margin-top: 20rem;
+        margin-bottom: 2rem;
+        margin-left: 2rem;
+    
+    }
+
+    .most-viewed-image {
+        gap: 1rem;
+        justify-content: center;
+    }
+
+    .most-viewed-arr{
+        margin-bottom: -19rem ;
+        margin-left: 5.4rem;
+        z-index: 1;
+        
+    }
+
+.button-next{
+    margin-right: 7rem;
+}
+
+    .last-hr {
+        display: none;
+    }
+
+    .text-span {
+        margin-left: rem;
+    }
+
+    .product-2 img {
+        margin-left: -2rem;
+    }
+    .product-container {
+        width: 22rem;
+    }
+    .product-2 {
+        justify-content: space-between;
+       
+    }
+
+    .productName,
+    .productPrice {
+        margin-left: -9rem;
+    }
+    .productName {
+        font-size: 14px;
+        color: black;
+        font-family: sans-serif;
+    }
+
+    
+    
+}
