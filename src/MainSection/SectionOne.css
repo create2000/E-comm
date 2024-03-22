@@ -134,3 +134,27 @@
 }
 
 }
+
+@media (max-width: 480px) {
+    .banner-image {
+        display: none;
+    }
+
+    .Gift-card {
+        display: none;
+    }
+
+    .design-card,
+    .image-slide{
+        display: none;
+    }
+
+    .banner-image {
+        display: none;
+    }
+
+    .image-slide {
+        display: none;
+    }
+    
+}

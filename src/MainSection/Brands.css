@@ -3,7 +3,7 @@
     flex-direction: row;
     position: absolute;
     margin-top: -15rem;
-    margin-left: ;
+    
 }
 
 .image-containment img {
@@ -85,10 +85,6 @@
     gap: 1.5rem;
     background-color: whitesmoke;
     
-    
-    
-    
-        
 }
 
 .product-2 > * {
@@ -128,7 +124,6 @@
     display: flex;
     flex-direction: row;
     align-items: center;
-   
     justify-content: space-between;
     width: ;
     margin-top: 70rem;
@@ -319,6 +314,130 @@
         font-family: sans-serif;
     }
 
+}
+
+@media (max-width:480px) {
+    .sign-col-1-text,
+    .paper-plane {
+        display: none;
+        
+    }
+
+    .sign-input-col {
+        display: flex;
+        width: auto;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .sign-input-col input {
+        width: 19rem;
+    }
+
+    .signUp {
+        flex-direction: column;
+    }
+
+    .sign-input-span {
+        margin-top: 3rem;
+        gap: 12px;
+    }
+
     
+    .button-viewed {
+        margin-top: 100rem;
+        z-index: 1;
+        border-radius: 3px;
+       
+    }
+    .button-next {
+        margin-top: 100rem;
+    }
+
+    .button-arr {
+        background-color: whitesmoke;
+        border-radius: 50%; 
+        border: 3px solid gray;
+        opacity: 30%;
+    }
+    .image-carousel {
+        margin-top: -6rem;
+
+    }
+
+    .image-containment {
+        width: 25rem;
     
+    }
+    .left-arrow {
+        margin-left: -10px;
+    }
+    .image-containment img {
+        width: 80rem;
+        height: 9vh;
+        margin-left: 7rem;
+        
+    }
+    
+    .most-viewed {
+        margin-top: 10rem;
+        margin-bottom: -3rem;
+        display: flex;
+    }
+
+    
+    .last-hr {
+        display: none;
+    }
+    .most-viewed-arr {
+        width: 34rem;
+        margin-left: -4rem;
+        margin-bottom: -8rem;
+        
+    }
+    .most-viewed-image {
+        width: 50rem; 
+        overflow-x: auto;  white-space: nowrap; 
+      }
+
+    .last-hr {
+        width: 14rem;
+    }
+
+    .product-container {
+        overflow: hidden;
+        width: 100%;
+        display: inline-block; 
+        margin-bottom: 5rem;
+       
+        
+        
+    }
+    .product-2 {
+        max-width: 100%; 
+        width: 27.5rem;
+        height: 10lyrem;
+        margin-left: 1rem;
+        
+    }
+    .text-span {
+        margin-left: -2rem;
+    }
+   
+
+    .productName,
+    .productPrice {
+        margin-left: -9rem;
+    }
+    .productName {
+        font-size: 14px;
+        color: black;
+        font-family: sans-serif;
+    }
+    .product-2 img {
+        margin-left: -1px;
+        gap: 10rem;        
+    }
+
+
 }

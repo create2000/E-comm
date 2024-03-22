@@ -116,17 +116,21 @@ function Latest() {
     </div>
 
     <div className="blog">
-        <p className='class-prod-par'>LATEST BLOGS</p>
-        <span className='blog-span'>.</span>
-        <RxDotFilled className='prod-dot'/>  <RxDotFilled className='prod-dot' />
+        <span className='class-prod-par-2'>LATEST BLOGS</span>
+        <span className='blog-span'></span>
+        <RxDotFilled className='prod-dot-2'/>
     </div>
 
     <div className="newsletter">
         <img src="/src/assets/lector.webp" alt="" className='news-img' />
+
+        <div className="newspaper-features">
+
          <p className='newsletter-txt'>Biten demons lector in vanderheit</p>
         <div className="newsletter-span-one">
         <FaRegCalendarAlt />
             <span>January 30th, 2024</span>
+        </div>
         </div> 
 
     </div>
@@ -135,9 +139,7 @@ function Latest() {
         <p>TOP RATED</p>
         </div> <hr className='hr-rule' />
 
-        <div className="top-rated-list">
-
-       
+        <div className="top-rated-list">    
         <div className="top-rated-row">
             <img src="/src/assets/Priodent.webp" alt="" className='top-rated-img' />
             <div className="top-rated-col">

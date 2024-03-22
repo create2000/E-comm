@@ -63,15 +63,18 @@ useEffect(() => {
 
         
 
-        <div className="slideshow-container">
+      <div className="slideshow-container">
        <div className={`deal-container ${currentSlide === 1 ? 'active' : ''}`} ref={(el) => (slidesRef.current[1] = el)}>
+      
        <div className= "Deal-two">
+        <div className="onah">
           <img src="/src/assets/Deal-2.webp" 
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(1)}
           ref={(el) => (slidesRef.current[1] = el)}
           />
+          </div>
           
           <div className="Deal-text">
             <h3>Wamboudin Ribeye</h3>
@@ -79,7 +82,7 @@ useEffect(() => {
             <p className='par-2'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias porro perspiciatis non excepturi</p>
             <div className="count">
               <p>Available: <span className='AvailNum-1'>94</span></p>
-              <p>Sold: <span className='AvailNum-2'>66</span></p>
+              <p  className='p2'>Sold: <span className='AvailNum-2'>66</span></p>
               <span></span>
             </div>
             <span className='empty-span'></span>
@@ -113,19 +116,22 @@ useEffect(() => {
 
        <div className={`deal-container ${currentSlide === 2 ? 'active' : ''}`} ref={(el) => (slidesRef.current[2] = el)}>
         <div className= "Deal-three">
+          <div className="onah">
+
           <img src="/src/assets/Deal-3.webp" 
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(2)}
           ref={(el) => (slidesRef.current[2] = el)}
           />
+          </div>
           <div className="Deal-text">
             <h3>Drumstick Tempor</h3>
             <p> <span className='par-1'>$66.00 </span>  <span className='span-1'>$70.00</span></p>
             <p className='par-2'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias porro perspiciatis non excepturi</p>
             <div className="count">
               <p>Available: <span className='AvailNum-1'>467</span></p>
-              <p>Sold: <span className='AvailNum-2'>1</span></p>
+              <p  className='p2'>Sold: <span className='AvailNum-2'>1</span></p>
               <span></span>
             </div>
             <span className='empty-span'></span>
@@ -158,19 +164,22 @@ useEffect(() => {
 
         <div className={`deal-container ${currentSlide === 3 ? 'active' : ''}`} ref={(el) => (slidesRef.current[3] = el)}>
         <div className= "Deal-four">
+          <div className="onah">
+
           <img src="/src/assets/Deal-4.webp" 
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(3)}
           ref={(el) => (slidesRef.current[3] = el)}
           />
+          </div>
           <div className="Deal-text">
             <h3>Cenison Meatloa</h3>
             <p> <span className='par-1'>$50.00 </span>  <span className='span-1'>$62.00</span></p>
             <p className='par-2'> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Cupiditate molestias porro perspiciatis non excepturi</p>
             <div className="count">
               <p>Available: <span className='AvailNum-1'>653</span></p>
-              <p>Sold: <span className='AvailNum-2'>4</span></p>
+              <p className='p2'>Sold: <span className='AvailNum-2'>4</span></p>
               <span></span>
             </div>
             <span className='empty-span'></span>

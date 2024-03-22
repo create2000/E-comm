@@ -408,10 +408,50 @@
     .img-3 {
       margin-left: 12rem;
     }
+  
+    }
+
+    @media (max-width: 480px) {
+      .input-search,
+      .icon-search
+       {
+        display: none;
+      }
+
+      .img-1,
+      .img-2 {
+        display: none;
+      }
+
+     .side-menu {
+      margin-left: -90px;
+     }
+
+     .Gen-catalogue {
+      align-items: center;
       
+     }
+     .store-catalogue {
+      margin-left: -4rem;
+      margin-bottom: ;
+     }
+     .icon-gen {
+      margin-left: 90px;
+     }
+     
+     .Hamburger {
+      font-size: 1.2rem;
+     }
+
+     .cat-1 p {
+      font-family: Arial, Helvetica, sans-serif;
+     }
+
+     
 
       
     }
+     
 
     
 

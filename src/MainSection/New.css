@@ -385,3 +385,106 @@ margin-left: 10rem;
 
 
 }
+
+@media (max-width: 480px) {
+    .Trends-two {    
+        color: black;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 2rem;
+        width: 30rem;
+        min-width: 5.5rem;
+        margin-top: -21rem;  
+        margin-left: 0rem;
+        position: absolute;
+          
+    }
+        
+    .text {
+        background-color: red;
+        opacity: 100;
+    
+    }
+        
+    .trend-head-two {
+        margin-top: 22rem;
+        padding: 0.7rem;
+        margin-left: 1rem;
+        border-radius: 3px;
+    
+    }
+        
+    .trend-input-two {
+        width: 10rem;
+        margin-right: 0rem;
+        font-size: 15px;
+    
+    }
+        
+    .dr-arrow-two {
+        background-color: rgb(244, 243, 243);
+        font-size: 30px;
+        padding: 0.5rem;
+        margin-right: rem;
+        margin-top: 1.2rem;   
+        width: 2rem;
+        height: 2.5rem;
+        color: gray !important;
+    
+    }
+    
+    .input-arrow-two {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 21rem;
+        margin-right: 1.5rem; 
+        
+    }
+        
+    .Array-list-two {
+        margin-left: 0.5rem;
+        color: gray; 
+        line-height: 5px;
+            
+    }
+    
+    .Array-div-two ul {
+        display: flex;
+        flex-direction: column;
+        float: right;
+        justify-content: space-between; 
+        list-style: none;
+        width: 3rem;
+            
+    }
+        
+    .Array-list-two:hover {
+        color: orangered;
+        
+    }
+        
+    .Array-div-two {    
+        margin-top: 17rem;
+        position: absolute;
+        background-color: rgb(245, 244, 244);
+        padding: 1rem 8rem 1rem 1rem;
+        border: 1px light black;
+        box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+        border-top: none;
+        cursor: pointer;
+        z-index: 1;
+    }
+        
+    .red {
+        color: red;
+    
+    }
+   .image-2,
+   .image-div-2 {
+    display: none;
+   }
+    
+}

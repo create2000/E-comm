@@ -37,7 +37,7 @@ function Trends() {
   
     useEffect(() => {
       const resizer = () => {
-        setSmallWindow(window.innerWidth < 991);
+        setSmallWindow(window.innerWidth < 991 );
       };
   
       window.addEventListener("resize", resizer);
@@ -97,10 +97,7 @@ function Trends() {
   
   
     {smallWindow ? (
-
-     
         <div className="image-div" style={{ position: 'relative' }}>
-
           <div className="image-container"  
           onMouseEnter={() => setShowSecondImage(true)}
           onMouseLeave={() => setShowSecondImage(false)}
@@ -190,7 +187,6 @@ function Trends() {
 ) : ( 
 
     <div className="image-div" style={{ position: 'relative' }}>
-
         <div className="image-container"
           onMouseEnter={() => setShowSecondImage(true)}
           onMouseLeave={() => setShowSecondImage(false)}

@@ -1,10 +1,42 @@
-    @media (max-width: 991px) {
 
-    }
-    
 section {
     background-color: var(--second-bg-color);
     height: 30vh;    
+}
+
+
+@media (max-width:480px) {
+    .Header-paragraph {
+       display: none ;        
+    }
+    section {
+         height: 22vh;
+         
+    }
+
+    .Account  {
+        margin-left: -4rem;
+        
+    }
+
+    .imprompt {
+        display: none;
+    }
+
+    .Header-span {
+        margin-left: 16rem !important;
+        width: 13rem;
+    }
+
+    .Header-one {
+        width: 100%;
+    }
+
+    .second-par {
+        margin-left: -1.5rem;
+        
+    }
+       
 }
     
 .Header-one p{
@@ -110,12 +142,6 @@ section {
     background-color: red;
 }
 
-@media (min-width:993px) {
-    .Account {
-        display: none;
-    }
-}
-
 @media (max-width: 992px) {
     .Header-paragraph {
         display: none;
@@ -154,6 +180,5 @@ section {
     }
 };
 
-     
 
     

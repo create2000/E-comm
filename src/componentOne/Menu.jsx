@@ -20,13 +20,6 @@ import "./Menu.css";
 
 const Menu = () => {
 
-  // const [isMenuOpen, setMenuOpen] = useState(false);
-
-  
-  // const toggleMenu = () => {
-  //   setMenuOpen(!isMenuOpen);
-  // }
-
   return (
     <>
       {/* <HiMenu  className= "List-icon" onClick={toggleMenu}/> */}

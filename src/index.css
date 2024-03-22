@@ -19,7 +19,8 @@
 
 html{
   
-  overflow-x: hidden;
+  overflow-x: auto;
+  overflow-y: auto;
 
 }
 

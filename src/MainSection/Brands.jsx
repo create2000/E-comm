@@ -64,8 +64,6 @@ const mostViewed = [
 
 const numImagesToDisplay = 4;
 
-
-
 const images = [
   "src/assets/Brand1.png",
   "src/assets/Brand2.png",
@@ -125,8 +123,13 @@ function ImageCarousel() {
         };
     }, []);
     
-    const adjustedNumImagesToDisplay = windowWidth < 991 ? 2 : numImagesToDisplay;
-  // Adjust numImagesToDisplay based on window width conditionally
+    const adjustedNumImagesToDisplay =
+    windowWidth <= 480 ? 1 :
+    windowWidth <= 991 ? 2 : 
+    numImagesToDisplay;
+
+    const adjustedNumImagesToShow = 
+    windowWidth <= 480 ? 1 : numImagesToShow;
 
 
   return (
@@ -144,7 +147,7 @@ function ImageCarousel() {
     <div className="image-carousel">
      <IoIosArrowDropleft className="left-arrow" onClick={handlePrev}/>
       <div className="image-containment">
-        {images.slice(startIndex, startIndex + numImagesToShow).map((image, index) => (
+        {images.slice(startIndex, startIndex + adjustedNumImagesToShow).map((image, index) => (
           <img key={index} src={image} alt={`Image ${index + 1}`} />
         ))}
       </div>

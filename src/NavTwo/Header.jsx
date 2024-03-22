@@ -35,7 +35,7 @@ const Header = () => {
      
       <div className="Account" >
         <div className="Account-info" onMouseEnter={handleHover} onMouseLeave={handleMouseLeave}>
-          <FaUserAlt className='Account-icon'/><p>My Account </p><IoMdArrowDropdown   />
+          <FaUserAlt className='Account-icon'/><p className='imprompt'>My Account </p><IoMdArrowDropdown   />
         </div>
         {showDropdown && (
         <ul>

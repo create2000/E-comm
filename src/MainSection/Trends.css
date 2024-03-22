@@ -314,28 +314,21 @@ a {
     margin-right: 1.5rem; 
         
 }
-    
 .Array-list {
     margin-left: 0.5rem;
     color: gray; 
-    line-height: 5px;
-        
+    line-height: 5px;       
 }
-    
 .Array-div ul {
     display: flex;
     flex-direction: column;
     float: right;
     justify-content: space-between; 
-    list-style: none;
-        
+    list-style: none;       
 }
-    
 .Array-list:hover {
-    color: orangered;
-        
+    color: orangered;       
 }
-    
 .Array-div {    
     margin-top: 17rem;
     position: absolute;
@@ -447,7 +440,6 @@ transition: opacity 0.9s ease;
     width: 60%;
     gap: 1rem;
     margin-right: 2rem;
-    
     margin-top: -95rem;
 
 }
@@ -501,5 +493,131 @@ transition: opacity 0.9s ease;
 }
 
 } 
+
+@media (max-width:480px) {
+    .Trends {
+        width: 40rem;
+        margin: 0;
+        margin-top: 90rem;
+        align-items: center;
+        gap: 1rem;
+    }
+    .trend-head {
+        padding: 0.7rem;
+        border-radius: 5px;
+    }
+    .trend-input {   
+        width: 11rem;
+        margin-top: -1rem;
+        
+    }
+
+    .dr-arrow {
+        margin-right: 12.2rem;
+        margin-bottom: -0.8rem;
+        background-color: rgb(224, 217, 217)   ;
+        padding: 8px;
+        font-size: 30px;
+        cursor: pointer;
+        color: rgb(159, 157, 157);
+        height: 35px;
+     }
+
+    .input-arrow {
+        /* margin-top: -1rem; */
+        align-items: center;
+    }
+
+    .shop-now {
+        display: block;
+        margin: 0;
+        
+    }
+    .empty {
+        margin-left: -4.4rem;
+        
+    }
+    .empty img {
+        width: 25.5rem;
+        margin-top: 2rem;
+    }
+    .shop-now-one,
+    .shop-now-two {
+        display: none;
+    }
+
+    .image-div {
+        margin-top: 95rem;
+        margin-right: -3rem;
+        flex-direction: row;
+        flex-wrap:wrap ;
+        width: 30rem;   
+        gap: 1.5rem;
+        
+         
+    }
+    .image-container img {
+        width: 10rem;
+        height: 10rem;
+        margin-left: 1rem;
+        object-fit: cover; /* Ensure the image covers the entire container */
+        position: absolute;
+        top: 0;
+        left: 0;
+        
+    }
+
+    .image-container {
+        margin-left: 0rem;
+        width: 12rem;
     
+    }
+
+    .side-icons {
+        display: none;
+    }
+
+       
+    .Array-list {
+    margin-left: 0.5rem;
+    color: gray; 
+    line-height: 5px;
+        
+}
+    
+    .Array-div ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between; 
+    list-style: none;
+        
+}
+    
+    .Array-list:hover {
+    color: orangered;
+        
+}
+    
+    .Array-div {    
+    margin-top: 0;
+    position: absolute;
+    background-color: rgb(245, 244, 244);
+    padding: 1rem 6.8rem 1rem 1rem;
+    border: 1px light black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    cursor: pointer;
+    z-index: 1;
+}
+    
+    .red {
+    color: red;
+
+}
+    .innertext {
+    margin-left: 0.9rem;
+}
+ 
+}
     
