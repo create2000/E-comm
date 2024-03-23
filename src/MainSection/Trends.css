@@ -42,15 +42,6 @@
         cursor: pointer;
     }
 
-    
-    .input-arrow {
-        
-        /* flex-direction: row;
-        align-items: center;
-        margin-top: -19rem;
-        margin-right: -20rem; */
-        
-    }
     .Array-div ul {
         display: flex;
         flex-wrap: wrap; 
@@ -68,7 +59,7 @@
     }
     
     .image-container {
-      display: flex;
+      display: flex;  
       flex-direction: row;
       flex-wrap: wrap; 
       width: 11rem;

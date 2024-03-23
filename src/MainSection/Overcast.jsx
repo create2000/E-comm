@@ -5,19 +5,19 @@ import { FaGoogle } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
-import "./overlay.css";
+import "./overcast.css";
 
-function overlay() {
-    const [showOverlay, setShowOverlay] = useState(true);
+function Overcast() {
+    // const [showOverlay, setShowOverlay] = useState(true);
     const [showdropdown, setShowDropdown] = useState(true);
 
     const handleClose = () => {
         setShowDropdown(false);
     }
 
-    const handleCloseOverlay = () => {
-      setShowOverlay(false);
-    };
+    // const handleCloseOverlay = () => {
+    //   setShowOverlay(false);
+    // };
 
   return (
       <>
@@ -63,4 +63,4 @@ function overlay() {
   )
 }
 
-export default overlay
+export default Overcast

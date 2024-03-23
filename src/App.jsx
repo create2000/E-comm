@@ -1,11 +1,10 @@
-import React from 'react'
-import { createBrowserRouter, RouterProvider } from 'react-router-dom';
+
 import Header from './NavTwo/Header.jsx';
 import Deals from './MainSection/Deals.jsx';
 import Latest from './MainSection/Latest.jsx';
 import Trends from './MainSection/Trends.jsx';
 import New from './MainSection/New.jsx';
-import Overlay from './MainSection/overlay.jsx';
+import Overcast from './MainSection/Overcast.jsx';
 import ImageCarousel from './MainSection/Brands.jsx';
 
 
@@ -32,7 +31,7 @@ function App() {
       < Latest />
       <Trends />
       <New />
-      <Overlay />
+      <Overcast />
       < ImageCarousel />
     
    

@@ -42,15 +42,6 @@
     cursor: pointer;
 }
 
-
-.input-arrow-two {
-    
-    /* flex-direction: row;
-    align-items: center;
-    margin-top: -19rem;
-    margin-right: -20rem; */
-    
-}
 .Array-div-two ul {
     display: flex;
     flex-wrap: wrap; 
