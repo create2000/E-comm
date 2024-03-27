@@ -1,4 +1,9 @@
 import {useState, useEffect} from 'react';
+import Header from '../NavTwo/Header.jsx';
+import Deals from '../MainSection/Deals.jsx';
+import Latest from '../MainSection/Latest.jsx';
+import New from '../MainSection/New.jsx';
+import Overcast from '../MainSection/Overcast.jsx';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaShoppingCart } from "react-icons/fa";
 import { FaUser } from "react-icons/fa";
@@ -54,6 +59,10 @@ function Trends() {
   
     return (
       <>
+
+      <Header/> 
+      <Deals />
+      <Latest />
       <div className='Trends'>
         <div>
           <h4 className='trend-head'>TRENDING ITEMS</h4>
@@ -373,6 +382,8 @@ function Trends() {
     </div>
 
   </div>
+  <New />
+  <Overcast />
   </>
 
 

@@ -1,7 +1,6 @@
 import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
 import { FaUserAlt } from "react-icons/fa";
-import { HiMenu } from "react-icons/hi";
 import Menu from "../componentOne/Menu.jsx";
 import "./Header.css"
 

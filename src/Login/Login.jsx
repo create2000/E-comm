@@ -1,88 +1,109 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
+// import { Link } from 'react-router-dom';
+import { PiIdentificationCardThin } from "react-icons/pi";
+import { ImCancelCircle } from "react-icons/im";
+import { FaRegUser } from "react-icons/fa6";
+import { IoKeyOutline } from "react-icons/io5";
+import { FaGoogle } from "react-icons/fa6";
+import { FaFacebookF } from "react-icons/fa6";
+import { BsTwitterX } from "react-icons/bs";
+import { FaLinkedinIn } from "react-icons/fa";
 import './Login.css';
 
 export default function LoginForm() {
-  const [display, setDisplay] = useState('true');
 
-  function toggleLoginForm() {
-    setDisplay((prevDisplay) => !prevDisplay);
-  }
+  const [formData, setFormData] = useState({
+    firstName: '',
+    lastName: '',
+    email: ''
+  });
+
+  // Function to handle form input changes
+  const handleChange = (event) => {
+    const { name, value } = event.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+
+  // Function to handle form submission
+  const handleSubmit = (event) => {
+    event.preventDefault();
+    // Process form data, e.g., send it to a server
+    console.log(formData);
+    // Reset form fields
+    setFormData({
+      firstName: '',
+      lastName: '',
+      email: ''
+    });
+  };
+  
   return (
     <>
-    
-     
-<div id="login-popup" style={{ display: display ? 'block' : 'none' }}>
-<div className='login-page'>
-    <form>
-        <div className='login-page-paragraph'>
-            <img src='./Brands/Profile1.png' alt='' width='35px' className='profile-icon' />
-            <span className='Sign-in'> SIGN IN OR REGISTER</span>
-            <img src='./Brands/close.png' alt='' width='10px' className='close-icon' onClick={toggleLoginForm}/>
+    <div>
+      <div className="login-header">
+        <PiIdentificationCardThin className='dasboard' />
+        <p className='dashboard-paragraph'>SIGN IN OR REGISTER</p>
+        <ImCancelCircle className='dashboard-cancel'/>
+      </div>
 
-        
-        </div>
-        <div>
-          <div className='inputs-login'>
-            <div className='profile-email'>
-                <img src="./Brands/profile.png" alt='' width="15px" />
-                <input type="text" id="E-mail"  placeholder='E-mail Address'/>
-            </div>
+      <div className="login-form">
 
-            <div className='profile-password'>
-                <img src="./Brands/key.png" alt='' width="15px" />
-                <input type='password' id="password" placeholder='Password' />
-            </div>
+      <form onSubmit={handleSubmit}>
+      <label>
+      <FaRegUser />
+        Email:
+        <input
+          type="text"
+          name="email"
+          value={formData.email}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
+      <label>
+      <IoKeyOutline />
+        Password:
+        <input
+          type="alphanumeric"
+          name="password"
+          value={formData.lastName}
+          onChange={handleChange}
+        />
+      </label>
+      <br />
 
-          </div>
+      <p>Login with your social account</p>
+      <FaGoogle />
+      <FaFacebookF />
+      <BsTwitterX />
+      <FaLinkedinIn />
+
+      <p>Forgot your password?</p>
+  
+      <button type="submit">LOGIN</button>
+    </form>
+  </div>
 
 
-          <h5>Login with your social account</h5>
-
-          <div className='Media-icons'>
-            <div className='Media-icons-google'>
-                <div className='google'>
-                    <img src="./Brands/google-plus.png" alt="" />
-
-                </div>
-            </div>
-            <div className='Media-icons-facebook'>
-                <div className='facebook'>
-                    <img src="./Brands/facebook-app-symbol.png" alt="" />
-
-                </div>
-            </div>
-            <div className='Media-icons-twitter'>
-                <div className='twitter'>
-                    <img src="./Brands/twitter.png" alt="" />
-                </div>
-            </div>
-
-            <div className='Media-icons-linkedin'>
-                <div className='linkedin'>
-                    <img src="./Brands/linkedin.png" alt="" />
-                </div>
-            </div>
-
-          </div>
-          <p className='forgotten-password'>Forgot Your Password?</p>
-          <button type="Login" className='login-button'>LOGIN</button>
-        </div>
-        </form>
-        
-   
-    <div className='free-account'>
-
-      <h4 className='New'>NEW HERE?</h4>
-      <p>Registration is free and easy!</p>
-      <ol className='bullet-list'>
+    <div className="Register-side">
+      <h4>NEW HERE?</h4>
+      <p>Registration is free and easy</p>
+      <ul>
         <li>Faster checkout</li>
-        <li>Save multiple shipping address</li>
-        <li>View and Track order and more</li>
-      </ol>
-      <button className='create-account'>CREATE AN ACCOUNT</button>
+        <li>Save multiple shipping addresses</li>
+        <li>View and track orders and more</li>
+      </ul>
+
+      <button className='account-creation'>CREATE AN ACCOUNT</button>
     </div>
-    </div>
+
+
     </div>
     </>
-  );
-}
+  )
+  
+  }
+  

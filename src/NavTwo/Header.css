@@ -4,6 +4,10 @@ section {
     height: 30vh;    
 }
 
+.Account {
+    display: none;
+}
+
 
 @media (max-width:480px) {
     .Header-paragraph {
@@ -40,7 +44,8 @@ section {
 }
     
 .Header-one p{
-    font-size: smaller;
+    font-size: 12px;
+   
    
 }
 .Header-one{
@@ -52,11 +57,7 @@ section {
 
 .Header-one-span {
     font-weight: 700;
-}
-
-.Header-one p {
-    font-size: 12px;
-    ;
+    
 }
 
 .Header-span {
@@ -73,7 +74,7 @@ section {
 }
 
 .dropdown-content li {
-    color: black;
+  color: black;
   padding: 12px 16px;
   text-decoration: none;
   display: block;

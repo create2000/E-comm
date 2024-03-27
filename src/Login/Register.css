@@ -1,0 +1,103 @@
+.Register-section{
+    display: flex;
+}
+
+.Register-menu{
+    margin: 5% 3% 0% 35%;
+    border: 1px solid #ccc;
+    padding-left: 20px;
+    padding-right: 0px;
+    padding-right: 100px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    /* float: right; */
+} 
+.Register-menu p{
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    opacity: 0.7;
+    font-size: small;
+}
+.Register-form{
+    margin-left: 20px;
+    margin-top: 60px;
+    
+}
+
+h1, h2, h3, h4, h5, h6, p{
+    opacity: 0.6;
+}
+.Register-1 input{
+    margin-left: 30px;
+    margin-bottom: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    /* gap: 25px; */
+    padding-right: 130%;
+    padding-left: 10px;
+    max-width: 100%;
+    background-color: #F1F1F1;
+    border: 0px solid #ccc;
+    border-radius: 4px;
+    :focus{
+        border: none;
+    }
+}
+
+.Register-input{
+    display: flex;
+    align-items: center ;
+    margin-left: 13%;
+}
+.Register-input label{
+    font-weight: bold;
+    white-space: nowrap;
+    font-size: small;
+    opacity: 0.6;
+    
+
+}
+.Register-name-email{
+    margin-left: 30px;
+}
+.Register-password{
+    margin-right: -10px;
+    margin-left: -40px;
+}
+.subscription{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+}
+.subscription label{
+    margin-left: -10px;
+    margin-bottom: 7px;
+    
+}
+
+.Register-1{
+    display: flex;
+    flex-direction: column;
+    /* align-items: flex-start; */
+}
+
+.Terms{
+    display: flex;
+    flex-grow: 1;
+   justify-content: flex end; 
+}
+
+.Terms button{
+    margin-left: 20px;
+    justify-content: center;
+    background-color: orangered;
+    border: 1px white;
+    border-radius: 6px;
+    padding-top: 5px;
+    padding-bottom: 4px;
+    color: white;
+    margin-top: -5px;
+    
+}
+

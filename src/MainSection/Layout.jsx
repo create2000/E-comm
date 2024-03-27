@@ -1,0 +1,37 @@
+// import React from 'react'
+// 
+
+
+// function Layout ({children}) {
+//   return (
+//     <div>
+//     < Header/>
+//       {children}
+//       < Brands/>
+//     </div>
+//   )
+// }
+
+// export default Layout
+
+import React from 'react';
+import Header from '../NavTwo/Header';
+import Brands from '../MainSection/Brands';
+import PropTypes from 'prop-types';
+import './Layout.css'
+
+const Layout = ({ children }) => {
+  return (
+    <div className='layout-section'>
+      <Header />
+      {children}
+      <Brands />
+    </div>
+  );
+};
+
+Layout.propTypes = {
+  children: PropTypes.node.isRequired,
+};
+
+export default Layout;

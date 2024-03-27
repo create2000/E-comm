@@ -1,4 +1,4 @@
-import React, { useState } from 'react'
+import React from 'react'
 import Home from '../Nav/Home.jsx';
 import Blog from '../Nav/Blog.jsx';
 import Collection from '../Nav/Collection.jsx';
@@ -7,10 +7,10 @@ import Shop from '../Nav/Shop.jsx';
 import Pages from '../Nav/Pages.jsx';
 import Categories from '../NavTwo/Categories.jsx';
 import SectionOne from '../MainSection/SectionOne.jsx';
-import Login from '../Login/Login.jsx';
+
 import { Link } from 'react-router-dom';
 import { FaLock } from "react-icons/fa6";
-import { HiMenu } from "react-icons/hi";
+
 
 import "./Menu.css"; 
 
@@ -33,7 +33,9 @@ const Menu = () => {
         < Collection />
         <Market />
        </div>
-       <p className='Log'> <FaLock /><span> Login </span> or <span > Register</span></p>
+       <p className='Log'> <FaLock /> <span className='sign-up'> <Link to ="/Login" className='sign-login'>Login</Link> or <Link to ="/Register" className='sign-login'>Register</Link></span>
+       
+       </p>
        
     </div>
 
@@ -43,6 +45,7 @@ const Menu = () => {
     </div>
     </>
       
+      // 
   )
 }
 
