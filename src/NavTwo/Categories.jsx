@@ -27,6 +27,7 @@ import  Collection from '../Nav/Collection.jsx';
 import Marketplace from '../Nav/Marketplace.jsx';
 import Pages from '../Nav/Pages.jsx';
 import Shop from '../Nav/Shop.jsx';
+import heartIcon from "/src/assets/heart-icon.png"
 
 import './categories.css';  
 
@@ -92,7 +93,6 @@ const Categories = () => {
   return (
     <>
     <div className="Gen-catalogue">
-
     
     <div className="store-catalogue">
     <div className='Gen-Cat'>
@@ -135,7 +135,7 @@ const Categories = () => {
 <div className="icon-gen">
   <div className="icons">
    <LuRefreshCw className='img-1'/>
-   <img src="src/assets/heart-icon.png" alt="" className='img-2'/>
+   <img src={heartIcon} alt="" className='img-2'/>
    <HiOutlineShoppingBag className='img-3'/>
    </div>
   </div>

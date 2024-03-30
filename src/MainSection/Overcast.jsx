@@ -5,6 +5,7 @@ import { FaGoogle } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
 import { FaYoutube } from "react-icons/fa6";
 import { IoCloseSharp } from "react-icons/io5";
+import loadImage from "/src/assets/load-image.jpg";
 import "./overcast.css";
 
 function Overcast() {
@@ -27,7 +28,7 @@ function Overcast() {
     <div className='overlay'>
         
       <span className='newsletter-close-btn'><IoCloseSharp  onClick={handleClose}/></span> 
-        <img src="src/assets/load-image.jpg" alt="" />
+        <img src={loadImage} alt="" />
         <div className="overlay-text">
             <h1 className='newsletter-two'>Newsletter</h1>
             <p className='newsletter-paragraph'>Subscribe to the mailing list to receive updates on new arrivals, special offers and other discount information.</p>

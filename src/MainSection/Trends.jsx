@@ -1,5 +1,5 @@
 import {useState, useEffect} from 'react';
-import Header from '../NavTwo/Header.jsx';
+// import Header from '../NavTwo/Header.jsx';
 import Deals from '../MainSection/Deals.jsx';
 import Latest from '../MainSection/Latest.jsx';
 import New from '../MainSection/New.jsx';
@@ -12,6 +12,24 @@ import { FaRegEye } from "react-icons/fa";
 import { BiSolidDownArrow } from "react-icons/bi";
 import { IoIosStar } from "react-icons/io";
 import { MdKeyboardDoubleArrowUp } from "react-icons/md";
+import store1 from "/src/assets/store1.webp";
+import store2 from "/src/assets/store2.webp";
+import store3 from "/src/assets/store3.webp";
+import store9 from "/src/assets/store9.webp";
+import store8 from "/src/assets/store8.webp";
+import store5 from "/src/assets/store5.webp";
+import store7 from "/src/assets/store7.webp";
+import store6 from "/src/assets/store6.webp";
+import store10 from "/src/assets/store10.webp";
+import Deal3 from "/src/assets/Deal-3.webp"
+import Deal4 from "/src/assets/Deal-4.webp"
+import Deal5 from "/src/assets/Deal-5.webp"
+import SS3One from "/src/assets/SS3-1.jpg"
+import SS3Three from "/src/assets/SS3-3.jpg"
+import SS3Four from "/src/assets/SS3-4.jpg"
+import SS3Five from "/src/assets/SS3-5.jpg"
+import SS3Six from "/src/assets/SS3-5.jpg"
+
 import './Trends.css';
 
 let myArray = ["All", "Bathroom", "Bedroom", "Decor", "Furniture", "Living room"]
@@ -60,7 +78,7 @@ function Trends() {
     return (
       <>
 
-      <Header/> 
+      {/* <Header/>  */}
       <Deals />
       <Latest />
       <div className='Trends'>
@@ -111,8 +129,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage(true)}
           onMouseLeave={() => setShowSecondImage(false)}
         >
-            <img src="/src/assets/store1.webp" alt="" />
-            {showSecondImage && <img src="/src/assets/store2.webp" alt="" />}
+            <img src={store1} alt="" />
+            {showSecondImage && <img src={store2} alt="" />}
             <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -125,8 +143,8 @@ function Trends() {
             onMouseEnter={() => setShowSecondImage2(true)}
             onMouseLeave={() => setShowSecondImage2(false)}
           >
-            <img src="/src/assets/store9.webp" alt="" />
-            {showSecondImage2 && <img src="/src/assets/store8.webp" alt="" />}
+            <img src= {store9} alt="" />
+            {showSecondImage2 && <img src={store8} alt="" />}
               <div className="innertext" >
                   <p className='hello'>Sausage cowbee</p>
                   <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -139,8 +157,8 @@ function Trends() {
               onMouseEnter={() => setShowSecondImage3(true)}
               onMouseLeave={() => setShowSecondImage3(false)}
           >
-            <img src="/src/assets/store7.webp" alt="" />
-            {showSecondImage3 && <img src="/src/assets/store6.webp" alt="" />}
+            <img src={store7} alt="" />
+            {showSecondImage3 && <img src={store6} alt="" />}
 
               <div className="innertext" >
                 <p className='hello'>Sausage cowbee</p>
@@ -153,8 +171,8 @@ function Trends() {
               onMouseEnter={() => setShowSecondImage4(true)}
               onMouseLeave={() => setShowSecondImage4(false)}
           >
-            <img src="/src/assets/store10.webp" alt="" />
-            {showSecondImage4 && <img src="/src/assets/store8.webp" alt="" />}
+            <img src={store10} alt="" />
+            {showSecondImage4 && <img src={store8} alt="" />}
 
               <div className="innertext" >
                 <p className='hello'>Sausage cowbee</p>
@@ -167,8 +185,8 @@ function Trends() {
               onMouseEnter={() => setShowSecondImage5(true)}
               onMouseLeave={() => setShowSecondImage5(false)}
           >
-            <img src="/src/assets/Deal-3.webp" alt="" />
-           {showSecondImage5 && <img src="/src/assets/store2.webp" alt="" />}
+            <img src={ Deal3}alt="" />
+           {showSecondImage5 && <img src= {store2} alt="" />}
 
             <div className="innertext" >
                 <p className='hello'>Sausage cowbee</p>
@@ -181,8 +199,8 @@ function Trends() {
               onMouseEnter={() => setShowSecondImage6(true)}
               onMouseLeave={() => setShowSecondImage6(false)}
           >
-            <img src="/src/assets/Deal-4.webp" alt="" />
-            {showSecondImage6 && <img src="/src/assets/Deal-5.webp" alt="" />}
+            <img src={Deal4} alt="" />
+            {showSecondImage6 && <img src={Deal5} alt="" />}
 
               <div className="innertext" >
                 <p className='hello'>Sausage cowbee</p>
@@ -200,9 +218,9 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage(true)}
           onMouseLeave={() => setShowSecondImage(false)}
         >
-          <img src="/src/assets/store1.webp" alt="First Image" className='image-div-first-img'/>
+          <img src={store1} alt="First Image" className='image-div-first-img'/>
           
-          {showSecondImage && <img src="/src/assets/store2.webp" alt="Second Image" className='image-div-second-img' />}
+          {showSecondImage && <img src={store2} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -216,8 +234,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage2(true)}
           onMouseLeave={() => setShowSecondImage2(false)}
         >
-          <img src="/src/assets/Deal-5.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage2 && <img src="/src/assets/store3.webp" alt="Second Image" className='image-div-second-img' />}
+          <img src={Deal5} alt="First Image" className='image-div-first-img' />
+          {showSecondImage2 && <img src={store3} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -232,8 +250,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage3(true)}
           onMouseLeave={() => setShowSecondImage3(false)}
         >
-          <img src="/src/assets/store8.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage3 && <img src="/src/assets/store2.webp" alt="Second Image" className='image-div-second-img'/>}
+          <img src={store8} alt="First Image" className='image-div-first-img' />
+          {showSecondImage3 && <img src={store2} alt="Second Image" className='image-div-second-img'/>}
 
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
@@ -248,8 +266,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage4(true)}
           onMouseLeave={() => setShowSecondImage4(false)}
         >
-          <img src="/src/assets/store10.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage4 && <img src="/src/assets/store7.webp" alt="Second Image" className='image-div-second-img'/>}
+          <img src={store10} alt="First Image" className='image-div-first-img' />
+          {showSecondImage4 && <img src={store7} alt="Second Image" className='image-div-second-img'/>}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -265,8 +283,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage5(true)}
           onMouseLeave={() => setShowSecondImage5(false)}
         >
-          <img src="/src/assets/store9.webp" alt="First Image" className='image-div-first-img'/>
-          {showSecondImage5 && <img src="/src/assets/store2.webp" alt="Second Image" className='image-div-second-img' />}
+          <img src={store9} alt="First Image" className='image-div-first-img'/>
+          {showSecondImage5 && <img src={store2} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -280,8 +298,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage6(true)}
           onMouseLeave={() => setShowSecondImage6(false)}
         >
-          <img src="/src/assets/Deal-3.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage6 && <img src="/src/assets/store3.webp" alt="Second Image" className='image-div-second-img' />}
+          <img src={Deal3} alt="First Image" className='image-div-first-img' />
+          {showSecondImage6 && <img src={store3} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -295,8 +313,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage7(true)}
           onMouseLeave={() => setShowSecondImage7(false)}
         >
-          <img src="/src/assets/store2.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage7 && <img src="/src/assets/store8.webp" alt="Second Image" className='image-div-second-img'/>}
+          <img src={store2} alt="First Image" className='image-div-first-img' />
+          {showSecondImage7 && <img src={store8} alt="Second Image" className='image-div-second-img'/>}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -310,8 +328,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage8(true)}
           onMouseLeave={() => setShowSecondImage8(false)}
         >
-          <img src="/src/assets/store6.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage8 && <img src="/src/assets/store7.webp" alt="Second Image" className='image-div-second-img'/>}
+          <img src={store6} alt="First Image" className='image-div-first-img' />
+          {showSecondImage8 && <img src={store7} alt="Second Image" className='image-div-second-img'/>}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -326,8 +344,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage9(true)}
           onMouseLeave={() => setShowSecondImage9(false)}
         >
-          <img src="/src/assets/Deal-4.webp" alt="First Image" className='image-div-first-img'/>
-          {showSecondImage9 && <img src="/src/assets/store2.webp" alt="Second Image" className='image-div-second-img' />}
+          <img src={Deal4} alt="First Image" className='image-div-first-img'/>
+          {showSecondImage9 && <img src={store2} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -341,8 +359,8 @@ function Trends() {
           onMouseEnter={() => setShowSecondImage10(true)}
           onMouseLeave={() => setShowSecondImage10(false)}
         >
-          <img src="/src/assets/store5.webp" alt="First Image" className='image-div-first-img' />
-          {showSecondImage10 && <img src="/src/assets/store3.webp" alt="Second Image" className='image-div-second-img' />}
+          <img src={store5} alt="First Image" className='image-div-first-img' />
+          {showSecondImage10 && <img src={store3} alt="Second Image" className='image-div-second-img' />}
           <div className="innertext" >
             <p className='hello'>Sausage cowbee</p>
             <span className='star-span'><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /><IoIosStar /> </span>
@@ -368,17 +386,17 @@ function Trends() {
 
   <div className="shop-now">
     <div className="shop-now-one">
-        <img src="src/assets/SS3-1.jpg" alt="" />
-        <img src="src/assets/SS3-3.jpg" alt="" />
+        <img src= {SS3One} alt="" />
+        <img src={SS3Three} alt="" />
     </div>
 
     <div className="empty">
-        <img src="src/assets/SS3-4.jpg" alt="" />
+        <img src={SS3Four} alt="" />
     </div>
 
     <div className="shop-now-two">
-        <img src="src/assets/SS3-5.jpg" alt="" />
-        <img src="src/assets/SS3-1.jpg" alt="" />
+        <img src= {SS3Five} alt="" />
+        <img src={SS3Six} alt="" />
     </div>
 
   </div>

@@ -7,6 +7,7 @@ import Shop from '../Nav/Shop.jsx';
 import Pages from '../Nav/Pages.jsx';
 import Categories from '../NavTwo/Categories.jsx';
 import SectionOne from '../MainSection/SectionOne.jsx';
+import logo from "/src/assets/logo.png";
 
 import { Link } from 'react-router-dom';
 import { FaLock } from "react-icons/fa6";
@@ -24,7 +25,7 @@ const Menu = () => {
     <>
       {/* <HiMenu  className= "List-icon" onClick={toggleMenu}/> */}
     <div className='one'>
-       <img src="src/assets/logo.png" alt=""/>
+       <img src={logo} alt=""/>
        <div className= "Menu-Nav-list">
         < Home />
         < Pages />

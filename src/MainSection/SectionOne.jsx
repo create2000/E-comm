@@ -1,4 +1,11 @@
 import React, { useEffect, useRef } from 'react';
+import interiorDesign from "/src/assets/interior-design.jpg"
+import Slide1 from "/src/assets/slide-1.webp";
+import Slide2 from "/src/assets/slide-2.webp";
+import Slide3 from "/src/assets/slide-3.webp";
+import banner1 from "/src/assets/banner1.jpg"
+import banner2 from "/src/assets/banner2.jpg"
+import Gift from "/src/assets/Gift.jpg";
 import './SectionOne.css'
 
 function SectionOne() {
@@ -29,24 +36,24 @@ function SectionOne() {
   return (
       <>
    
-    <img src="src/assets/interior-design.jpg" alt="" className='design-card' />
+    <img src= {interiorDesign} alt="" className='design-card' />
     <div className='image-slide'>
       <img
-        src="/src/assets/slide-1.webp"
+        src= {Slide1}
         alt=""
         className='Slide'
         onLoad={handleImageLoad(0)}
         ref={(el) => (slidesRef.current[0] = el)}
       />
       <img
-        src="/src/assets/slide-2.webp"
+        src={Slide2}
         alt=""
         className='Slide'
         onLoad={handleImageLoad(1)}
         ref={(el) => (slidesRef.current[1] = el)}
       />
       <img
-        src="/src/assets/slide-3.webp"
+        src={Slide3}
         alt=""
         className='Slide'
         onLoad={handleImageLoad(2)}
@@ -55,11 +62,11 @@ function SectionOne() {
     </div>
 
     <div className="banner-image">
-        <img src="src/assets/banner1.jpg" alt="" className='banner-logo-one'/>
-        <img src="src/assets/banner2.jpg" alt="" className='banner-logo-two' />
+        <img src={banner1} alt="" className='banner-logo-one'/>
+        <img src={banner2} alt="" className='banner-logo-two' />
     </div>
 
-    <img src="src/assets/Gift.jpg" alt="" className='Gift-card' />
+    <img src={Gift} alt="" className='Gift-card' />
     </>
   );
 }

@@ -2,6 +2,10 @@ import React, { useState, useEffect, useRef } from 'react';
 import './Deals.css';
 import { TfiArrowCircleRight } from "react-icons/tfi";
 import { TfiArrowCircleLeft } from "react-icons/tfi";
+import deal from "/src/assets/Deal-2.webp";
+import dealOne from "/src/assets/Deal-3.webp";
+import dealTwo from "/src/assets/Deal-4.webp";
+import banner7 from "/src/assets/banner7.jpg";
 
 function Deals() {
 
@@ -68,7 +72,7 @@ useEffect(() => {
       
        <div className= "Deal-two">
         <div className="onah">
-          <img src="/src/assets/Deal-2.webp" 
+          <img src={deal} 
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(1)}
@@ -118,7 +122,7 @@ useEffect(() => {
         <div className= "Deal-three">
           <div className="onah">
 
-          <img src="/src/assets/Deal-3.webp" 
+          <img src={dealOne}
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(2)}
@@ -166,7 +170,7 @@ useEffect(() => {
         <div className= "Deal-four">
           <div className="onah">
 
-          <img src="/src/assets/Deal-4.webp" 
+          <img src={dealTwo}
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(3)}
@@ -215,7 +219,7 @@ useEffect(() => {
   
       </div>
 
-      <img src="/src/assets/banner7.jpg" alt="" className='banner-7' />
+      <img src={banner7} alt="" className='banner-7' />
       
       
     </>

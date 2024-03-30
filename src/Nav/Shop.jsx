@@ -1,5 +1,7 @@
 import React, { useState } from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
+import Image5 from "/src/assets/image-5.jpg";
+import Image6 from "/src/assets/image-6.jpg";
 import "./shop.css"
 
 let smartPhone = ["Apple","Toshiba","Samsung","Sony","Scanners","Dell"];
@@ -86,8 +88,8 @@ const Shop = () => {
       </tr>
     </tbody>
     <div className="table-icon">
-        <img src="src/assets/image-5.jpg" alt="" />
-        <img src="src/assets/image-6.jpg" alt="" />
+        <img src= {Image5} alt="" />
+        <img src={Image6} alt="" />
     </div>
   </table>
       )}

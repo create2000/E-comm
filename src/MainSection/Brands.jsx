@@ -8,54 +8,66 @@ import { FaXTwitter } from "react-icons/fa6";
 import { FaGoogle } from "react-icons/fa6";
 import { FaPinterest } from "react-icons/fa6";
 import { FaPaperPlane } from "react-icons/fa";
+import viewed1 from "/src/assets/viewed1.webp";
+import viewed2 from "/src/assets/viewed2.webp";
+import viewed3 from "/src/assets/viewed3.webp";
+import viewed4 from "/src/assets/viewed4.webp";
+import Brand1 from "/src/assets/Brand1.png";
+import Brand2 from "/src/assets/Brand2.png";
+import Brand3 from "/src/assets/Brand3.png";
+import Brand4 from "/src/assets/Brand4.png";
+import Brand5 from "/src/assets/Brand5.png";
+import Brand6 from "/src/assets/Brand6.png";
+import Brand7 from "/src/assets/Brand7.png";
+import Brand8 from "/src/assets/Brand8.png";
 import './Brands.css';
 
 
 const mostViewed = [
     {
-        img: 'src/assets/viewed1.webp',
+        img: viewed1,
         name: 'Lommodo Quitvena',
         price: '$59.00'
     },
 
     {
-        img: 'src/assets/viewed2.webp',
+        img: viewed2,
         name: 'Benderloin officia',
         price: '$36.00'
     },
 
     {
-        img: 'src/assets/viewed3.webp',
+        img: viewed3,
         name: 'Vintage shorts',
         price: '$45.00'
     },
 
     {
-        img: 'src/assets/viewed4.webp',
+        img: viewed4,
         name: 'Virtual Reality',
         price: '$46.00'
     },
 
     {
-        img: 'src/assets/viewed2.webp',
+        img: viewed2,
         name: 'Benderloin officia',
         price: '$36.00'
     },
 
     {
-        img: 'src/assets/viewed1.webp',
+        img: viewed1,
         name: 'Lommodo Quitvena',
         price: '$59.00'
     },
 
     {
-        img: 'src/assets/viewed4.webp',
+        img: viewed4,
         name: 'Virtual Reality',
         price: '$46.00'
     },
 
     {
-        img: 'src/assets/viewed3.webp',
+        img: viewed3,
         name: 'Vintage shorts',
         price: '$45.00'
     }
@@ -65,21 +77,21 @@ const mostViewed = [
 const numImagesToDisplay = 4;
 
 const images = [
-  "src/assets/Brand1.png",
-  "src/assets/Brand2.png",
-  "src/assets/Brand3.png",
-  "src/assets/Brand4.png",
-  "src/assets/Brand5.png",
-  "src/assets/Brand6.png",
-  "src/assets/Brand7.png",
-  "src/assets/Brand8.png",
-  "src/assets/Brand3.png",
-  "src/assets/Brand4.png",
-  "src/assets/Brand1.png",
-  "src/assets/Brand2.png",
-  "src/assets/Brand7.png",
-  "src/assets/Brand6.png",
-  "src/assets/Brand8.png"
+  Brand1,
+  Brand2,
+  Brand3,
+  Brand4,
+  Brand5,
+  Brand6,
+  Brand7,
+  Brand8,
+  Brand3,
+  Brand4,
+  Brand1,
+  Brand2,
+  Brand7,
+  Brand6,
+  Brand8,
   
 ];
 

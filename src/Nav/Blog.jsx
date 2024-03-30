@@ -1,5 +1,9 @@
 import React, {useState} from 'react'
 import { IoMdArrowDropdown } from "react-icons/io";
+import blogCol1 from "/src/assets/blog-col1.png";
+import blogCol3 from "/src/assets/blog-col3.png";
+import blogCol4 from "/src/assets/blog-col4.png";
+import blogList from "/src/assets/blog-list.png";
 import "./Blog.css"
 
 const Blog = () => {
@@ -38,59 +42,59 @@ const Blog = () => {
       <div className="Blog-profile" onMouseEnter={handleDropdownHover} onMouseLeave={handleDropdownLeave}>
       <div className="Blog-profile-col">
         <div className='col-1'>
-          <img src="src\assets\blog-col1.png" alt="" />
+          <img src={blogCol1} alt="" />
           <p className='blog-1'>BLOG 1 COLUMN</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col1.png" alt="" />
+          <img src={blogCol1} alt="" />
           <p className='blog-1'>BLOG 2 COLUMNS</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col3.png" alt="" />
+          <img src={blogCol3}alt="" />
           <p className='blog-1'>BLOG 3 COLUMNS</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4}alt="" />
           <p className='blog-1'>BLOG 4 COLUMNS</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-list.png" alt="" />
+          <img src={blogList}alt="" />
           <p className='blog-1'> BLOG LIST</p>          
         </div>
         </div>
 
         <div className="Blog-default">  
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4} alt="" />
           <p className='blog-1'>DEFAULT</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4} alt="" />
           <p className='blog-1'>PAGE DETAIL 1</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4} alt="" />
           <p className='blog-1'>PAGE DETAIL 2</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4} alt="" />
           <p className='blog-1'>PAGE DETAIL 3</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4}alt="" />
           <p className='blog-1'>PAGE DETAIL 4</p>          
         </div>
 
         <div className='col-1'>
-          <img src="src\assets\blog-col4.png" alt="" />
+          <img src={blogCol4}alt="" />
           <p className='blog-1'>PAGE DETAIL 5</p>          
         </div>
         </div>

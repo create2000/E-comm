@@ -7,6 +7,18 @@ import { FaShieldHalved } from "react-icons/fa6";
 import { FaGift } from "react-icons/fa6";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
+import deal5 from "/src/assets/Deal-5.webp";
+import deal4 from "/src/assets/Deal-4.webp";
+import deal3 from "/src/assets/Deal-3.webp";
+import deal2 from "/src/assets/Deal-2.webp";
+import armchair from "/src/assets/Armchair.jpg"; 
+import lector from "/src/assets/lector.webp";
+import priodent from "/src/assets/Priodent.webp";
+import Pariatur from "/src/assets/Pariatur.webp";
+import Ninim from "/src/assets/Ninim.webp"
+import Lommodo from "/src/assets/Lommodo.webp";
+import banner6 from "/src/assets/banner6.jpg";
+import star from "/src/assets/star.png";
 import './Latest.css';
 
 
@@ -22,7 +34,7 @@ function Latest() {
         
         <div className='prod-col'>
         <div className='prod-1'>
-            <img src="/src/assets/Deal-5.webp" alt="" />
+            <img src={deal5} alt="" />
             <div className="prod-1-txt">
                 <p className='Balltip'>Balltip Nullaelit</p>
                 <span className='star-icons'><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /></span>
@@ -33,7 +45,7 @@ function Latest() {
 
 
         <div className='prod-1'>
-        <img src="/src/assets/Deal-4.webp" alt="" />
+        <img src={deal4} alt="" />
 
             <div className="prod-1-txt">
                 <p className='Balltip'>Censon Meatloa</p>
@@ -45,7 +57,7 @@ function Latest() {
 
 
         <div className='prod-1'>
-        <img src="/src/assets/Deal-3.webp" alt="" />
+        <img src={deal3} alt="" />
 
             <div className="prod-1-txt">
                 <p className='Balltip'>Sausage cowbee</p>
@@ -58,7 +70,7 @@ function Latest() {
 
 
         <div className='prod-1'>
-        <img src="/src/assets/Deal-2.webp" alt="" />
+        <img src= {deal2} alt="" />
 
             <div className="prod-1-txt">
                 <p className='Balltip'>Wamboudin Ribeye</p>
@@ -112,7 +124,7 @@ function Latest() {
     </div>
 
     <div>
-        <img src="/src/assets/Armchair.jpg" alt=""  className='armchair'/>
+        <img src= {armchair} alt=""  className='armchair'/>
     </div>
 
     <div className="blog">
@@ -122,7 +134,7 @@ function Latest() {
     </div>
 
     <div className="newsletter">
-        <img src="/src/assets/lector.webp" alt="" className='news-img' />
+        <img src={lector} alt="" className='news-img' />
 
         <div className="newspaper-features">
 
@@ -141,16 +153,16 @@ function Latest() {
 
         <div className="top-rated-list">    
         <div className="top-rated-row">
-            <img src="/src/assets/Priodent.webp" alt="" className='top-rated-img' />
+            <img src={priodent} alt="" className='top-rated-img' />
             <div className="top-rated-col">
                 <p className='top-rated-col-par'>Proident Laborum</p>
 
                 <div className="star">
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
                 </div>
 
                 <p className='top-rated-col-price'>$169.00</p>
@@ -161,16 +173,16 @@ function Latest() {
 
 
         <div className="top-rated-row">
-            <img src="/src/assets/Pariatur.webp" alt="" className='top-rated-img' />
+            <img src={Pariatur} alt="" className='top-rated-img' />
             <div className="top-rated-col">
                 <p className='top-rated-col-par'>Pariatur Porking</p>
 
                 <div className="star">
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src= {star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
                 </div>
 
                 <p className='top-rated-col-price'>$98.00</p>
@@ -180,16 +192,16 @@ function Latest() {
 
 
         <div className="top-rated-row">
-            <img src="/src/assets/Ninim.webp" alt="" className='top-rated-img' />
+            <img src={Ninim} alt="" className='top-rated-img' />
             <div className="top-rated-col">
                 <p className='top-rated-col-par'>Ninim Spareri</p>
 
                 <div className="star">
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
                 </div>
 
                 <p className='top-rated-col-price'>$96.00</p>
@@ -198,16 +210,16 @@ function Latest() {
         </div>
 
         <div className="top-rated-row">
-            <img src="/src/assets/Lommodo.webp" alt="" className='top-rated-img' />
+            <img src={Lommodo}alt="" className='top-rated-img' />
             <div className="top-rated-col">
                 <p className='top-rated-col-par'>Lommodo Quitvena</p>
 
                 <div className="star">
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
-                    <img src="/src/assets/star.png" alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
+                    <img src={star} alt="" className='top-rated-star'/>
                 </div>
 
                 <p className='top-rated-col-price'>$59.00</p>
@@ -217,7 +229,7 @@ function Latest() {
     
         </div>
 
-        <img src="/src/assets/banner6.jpg" 
+        <img src= {banner6}
         alt="" 
         className='banner-6'
         />

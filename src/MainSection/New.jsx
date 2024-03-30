@@ -2,6 +2,18 @@ import {useState, useEffect} from 'react'
 import { BiSolidDownArrow } from "react-icons/bi";
 import { IoIosStar } from "react-icons/io";
 import './New.css';
+import deal2 from "/src/assets/Deal-2.webp"
+import store1 from "/src/assets/store1.webp"
+import store2 from "/src/assets/store2.webp";
+import store9 from "/src/assets/store9.webp";
+import store8 from "/src/assets/store8.webp";
+import store7 from "/src/assets/store7.webp";
+import store6 from "/src/assets/store6.webp";
+import store10 from "/src/assets/store10.webp";
+import deal3 from "/src/assets/Deal-3.webp";
+import deal4 from "/src/assets/Deal-4.webp";
+import deal5 from "/src/assets/Deal-5.webp";
+
 
 
 
@@ -84,7 +96,7 @@ function New() {
 
         <div className="image-2">
             <div className="image-chair">     
-            <img src="./src/assets/Deal-2.webp" alt="" className='chair'/>   
+            <img src={deal2} alt="" className='chair'/>   
 
             <div className="innertext-two" >
             <p className='hello-two'>Sausage cowbee</p>
@@ -102,8 +114,8 @@ function New() {
   onMouseEnter={() => setShowSecondImage(true)}
   onMouseLeave={() => setShowSecondImage(false)}
   >
-  <img src="/src/assets/store1.webp" alt="" />
-  {showSecondImage && <img src="/src/assets/store2.webp" alt="" />}
+  <img src= {store1} alt="" />
+  {showSecondImage && <img src={store2} alt="" />}
   <div className="innertext-2" >
   <p className='hello-2'>Sausage cowbee</p>
   <span className="hello-span-2">$55.00</span>
@@ -115,8 +127,8 @@ function New() {
   onMouseEnter={() => setShowSecondImage2(true)}
   onMouseLeave={() => setShowSecondImage2(false)}
 >
-  <img src="/src/assets/store9.webp" alt="" />
-  {showSecondImage2 && <img src="/src/assets/store8.webp" alt="" />}
+  <img src={store9} alt="" />
+  {showSecondImage2 && <img src={store8} alt="" />}
     <div className="innertext-2" >
         <p className='hello-2'>Sausage cowbee</p>
         <span className="hello-span-2">$55.00</span>
@@ -128,8 +140,8 @@ function New() {
     onMouseEnter={() => setShowSecondImage3(true)}
     onMouseLeave={() => setShowSecondImage3(false)}
 >
-  <img src="/src/assets/store7.webp" alt="" />
-  {showSecondImage3 && <img src="/src/assets/store6.webp" alt="" />}
+  <img src={store7} alt="" />
+  {showSecondImage3 && <img src={store6} alt="" />}
 
     <div className="innertext-2" >
       <p className='hello-2'>Sausage cowbee</p>
@@ -141,8 +153,8 @@ function New() {
     onMouseEnter={() => setShowSecondImage4(true)}
     onMouseLeave={() => setShowSecondImage4(false)}
 >
-  <img src="/src/assets/store10.webp" alt="" />
-  {showSecondImage4 && <img src="/src/assets/store8.webp" alt="" />}
+  <img src={store10} alt="" />
+  {showSecondImage4 && <img src={store8} alt="" />}
 
     <div className="innertext-2" >
       <p className='hello-2'>Sausage cowbee</p>
@@ -154,8 +166,8 @@ function New() {
     onMouseEnter={() => setShowSecondImage5(true)}
     onMouseLeave={() => setShowSecondImage5(false)}
 >
-  <img src="/src/assets/Deal-3.webp" alt="" />
- {showSecondImage5 && <img src="/src/assets/store2.webp" alt="" />}
+  <img src={deal3} alt="" />
+ {showSecondImage5 && <img src={store2} alt="" />}
 
   <div className="innertext-2" >
       <p className='hello-2'>Sausage cowbee</p>
@@ -167,8 +179,8 @@ function New() {
     onMouseEnter={() => setShowSecondImage6(true)}
     onMouseLeave={() => setShowSecondImage6(false)}
 >
-  <img src="/src/assets/Deal-4.webp" alt="" />
-  {showSecondImage6 && <img src="/src/assets/Deal-5.webp" alt="" />}
+  <img src={deal4} alt="" />
+  {showSecondImage6 && <img src={deal5} alt="" />}
 
     <div className="innertext-2" >
       <p className='hello-2'>Sausage cowbee</p>
