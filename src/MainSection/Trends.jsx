@@ -3,6 +3,8 @@ import {useState, useEffect} from 'react';
 import Deals from '../MainSection/Deals.jsx';
 import Latest from '../MainSection/Latest.jsx';
 import New from '../MainSection/New.jsx';
+import Categories from '../NavTwo/Categories.jsx';
+import SectionOne from '../MainSection/SectionOne.jsx';
 import Overcast from '../MainSection/Overcast.jsx';
 import { GiHamburgerMenu } from "react-icons/gi";
 import { FaShoppingCart } from "react-icons/fa";
@@ -77,7 +79,8 @@ function Trends() {
   
     return (
       <>
-
+      < Categories /> 
+    < SectionOne />
       {/* <Header/>  */}
       <Deals />
       <Latest />

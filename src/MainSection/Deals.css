@@ -2,7 +2,7 @@
 .Deal-Deal-one {
     display: flex;
     align-items: center;
-    margin-top: 19rem;
+    margin-top: -6rem;
     justify-content: space-between;
     
 }
@@ -194,7 +194,7 @@
   .banner-7 {
     width: 68vw;
     margin-left: 22rem;
-    margin-top: 20rem;
+    margin-top: 22rem;
 }
   
   @media (max-width: 991px) {

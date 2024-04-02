@@ -1,7 +1,35 @@
 import React, { useState } from 'react';
 import './Register.css';
 
+
+
+const registerDetails = [
+  "Login",
+  "Register",
+  "Forgotten Password",
+  "My Account",
+  "Address Book",
+  "Wish List",
+  "Order History",
+  "Downloads",
+  "Recurring payments",
+  "Reward Points",
+  "Returns",
+  "Transactions",
+  "Newsletter",
+]
+
+
 function Register() {
+
+  const registered = registerDetails.map((item, index) => (
+    <React.Fragment key={index}>
+      <li>{item}</li>
+      <hr />
+    </React.Fragment>
+  ));
+  
+  
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -24,16 +52,23 @@ function Register() {
 
   return (
     <>
-    <div className='Register-section'>
+    <div className="Registration">
 
-    <div className='Register-form'>
-      <h1>Register Account</h1>
-      <p>If you already have an account with us, please login at the login page.</p>
-      <h3>Your Personal Details</h3> <hr />
-      <form onSubmit={handleSubmit} className='Register-1'>
-        <div className='Register-input'>
-          <label htmlFor="firstName" className='Register-name'>First Name</label>
-          <input className='form-feed'
+    <div className="Register-account">
+    <div className="account-creation">
+      <h1>Register Account </h1>
+      <p className='account-p'>If you already have an account with us, please login at the login page</p>
+
+      <p className='account-2p'>Your Personal Details</p>
+
+    </div>
+
+    <form onSubmit={handleSubmit}> 
+    <div className="Gen-div">
+      
+    <div className='first-div'>
+          <label htmlFor="firstName">First Name:</label>
+          <input
             type="text"
             id="firstName"
             name="firstName"
@@ -43,9 +78,10 @@ function Register() {
             required
           />
         </div>
-        <div  className='Register-input'>
-          <label htmlFor="lastName" className='Register-name'>Last Name</label>
-          <input className='form-feed'
+
+        <div className='second-div'>
+          <label htmlFor="lastName">Last Name:</label>
+          <input
             type="text"
             id="lastName"
             name="lastName"
@@ -53,23 +89,24 @@ function Register() {
             value={formData.lastName}
             onChange={handleInputChange}
             required
-            />
+          />
         </div>
-        <div className='Register-input'>
-          <label htmlFor="email" className='Register-name-email'>E-Mail</label>
-          <input className='form-feed'
+
+        <div className='third-div'>
+          <label htmlFor="email">E-mail:</label>
+          <input
             type="email"
             id="email"
             name="email"
+            placeholder='E-mail'
             value={formData.email}
-            placeholder='Email'
             onChange={handleInputChange}
             required
           />
         </div>
-        <div className='Register-input'>
-          <label htmlFor="telephone" className='Register-name'>Telephone</label>
-          <input className='form-feed'
+        <div className='fourth-div'>
+          <label htmlFor="telephone">Telephone:</label>
+          <input
             type="tel"
             id="telephone"
             name="telephone"
@@ -77,97 +114,67 @@ function Register() {
             value={formData.telephone}
             onChange={handleInputChange}
             required
-            />
+          />
         </div>
+      </div> 
 
-        <h3>Your Password</h3> <hr />
-        <div className='Register-input'>
-          <label htmlFor="password">Password</label>
+  <div className="Pass-confirm">
+    <p className='password'>Your Password</p>
+      <div className="password-section">
+
+        <div className="password1">
+        <label htmlFor="telephone">Password:</label>
           <input
-            type="password"
-            id="password"
+            type="alpha"
+            id="Password"
             name="password"
             placeholder='Password'
             value={formData.password}
             onChange={handleInputChange}
             required
-            />
+          />
         </div>
 
-        <div className='Register-input'>
-          <label htmlFor="password" className='Register-password'>Password Confirm</label>
+        <div className="password2">
+        <label htmlFor="telephone">Password Confirm:</label>
           <input
-            type="password"
-            id="password"
-            name="password"
-            placeholder='Password Confirm'
+            type="alpha"
+            id="password confirm"
+            name="password confirm"
+            placeholder='Password confirm'
             value={formData.password}
-            onChange={handleInputChange} 
+            onChange={handleInputChange}
             required
             />
-     
+          </div>
         </div>
-
-
-        <h3>Newsletter</h3> <hr />
-        <div className='subscription'>
-
-        <p>Subscribe</p>
-
-      
-        <input
-            type="radio"
-            value="yes"
-            name="radioValue"
-            // Value={formData.radioValue}
-            onChange={handleInputChange} 
-            />
-        <label htmlFor='radio'>Yes</label>
-
-      
-        <input
-            type="radio"
-            value="No"
-            name="radioValue"
-            // Value={formData.radioValue}
-            onChange={handleInputChange} 
-            />
-          <label htmlFor='radio'>No</label>
-        
-          </div>
-
-      <div className='Terms'>
-
-        <label htmlFor='checkbox'>I have read and agree to the <b>Term and conditions</b></label>
-          <input 
-            type='checkbox'
-            id='Conditions'
-            value={formData.checkboxValue}
-            onChange={handleInputChange}
-            /> <button>Continue</button>
-          </div>
-            
-      </form>
     </div>
-    <div className='Register-menu'>
-      <p>Login</p>
-      <p>Register</p>
-      <p>Forgotten Password</p>
-      <p>My Account</p>
-      <p>Address Book</p>
-      <p>Wish List</p>
-      <p>Order History</p>
-      <p>Downloads</p>
-      <p>Recurring payments</p>
-      <p>Reward Points</p>
-      <p>Returns</p>
-      <p>Transactions</p>
-      <p>Newsletter</p>
+    </form>
 
-       </div> 
-     </div>
-  </>
-  );
-}
+    <p className='Register-newsletter'>Newsletter</p>
+    <div className="subscription">
+      <p>Subscribe</p>
+      <input type="radio" /> <span className='options'>Yes</span>
+      <input type="radio" /> <span className='options'>No</span>
+    </div>
+
+    <div className="submit">
+      <p>I have read and agree to the <span>Term and condition</span></p>
+      <input type="checkbox" />
+      <button className='proceed'>CONTINUE</button>
+
+    </div>
+    </div>
+
+    <div className="mapped-array">
+      {registered} 
+    </div>
+
+    </div>
+
+    </>
+  )
+    
+   }
 
 export default Register

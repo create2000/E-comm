@@ -1,0 +1,214 @@
+.modal-overlay {
+    position: fixed; /* Ensures it covers the entire viewport */
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+    
+    z-index: 999; 
+}
+
+.general-login {
+    /* margin-left: 20rem; */
+    margin: 0 auto;
+    color: black;
+    display: flex;
+    background-color: whitesmoke;
+    /* margin-top: 3rem; */
+    box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
+    width: 50%;
+    height: 65vh;
+    position: fixed;
+    top: 175px; /* Adjust for desired position */
+    left: 315px; /* Adjust for desired position */
+    
+}
+
+.login {
+    display: flex;
+    flex-direction: column;
+}
+.login .login-header {
+    display: flex;
+    background-color: #ff3c20;
+    color: white;
+    width: 50vw;
+    height: 7vh;
+    justify-content: space-between;
+    align-items: center;
+    
+    
+  
+}
+
+.dashboard {
+    color: white;
+    font-size: 40px;
+    font-weight: 900;
+    margin-left: 1rem;
+    
+}
+.dashboard-paragraph {
+    font-size: 16px;
+    font-weight: 600;
+    margin-right: 23rem;
+}
+
+.dashboard-cancel {
+    font-size: larger;
+    margin-right: 1rem;
+}
+.Register-side {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    margin-top: 3.5rem;
+    margin-left: -17rem;
+    opacity: 65%;
+}
+
+.Register-side li {
+    list-style-type: disc;
+    font-size: 14px;
+    margin-left: 1rem;
+    
+}
+.Register-side p {
+    font-size: 14px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    gap:   1rem;
+}
+
+.create-An-Account {
+    background-color: rgb(7, 6, 6);
+    color: white;
+    padding: 0.7rem;
+    width: 14vw;
+    font-weight: 700;
+    border-radius: 5px;
+    
+  
+}
+
+.account-creation:hover {
+background-color: #ff3c20 !important;
+
+}
+
+.vertical-rule {
+    border-left: 1px solid rgb(210, 202, 202); 
+    height: 250px; /* Adjust the height of the rule */
+    position: absolute;
+    margin-left: 21rem;
+    margin-top: 4rem;
+}
+
+.login-form {
+    margin-top: 2rem;    
+    margin-left: 1rem;
+    
+}
+
+.login-form input {
+    background-color: whitesmoke;
+    position: absolute;
+    width: 15rem;
+    height: 6.8vh;
+    border: 1px solid rgb(209, 206, 206);
+    border-left: none;
+ }
+
+ .login-form input::placeholder {
+    color: grey;
+    font-size: small;
+    
+ }
+
+.RegUser {
+    background-color: rgba(108, 105, 105, 0.53);
+    font-size: 40px;
+    padding: 0.3rem 0.7rem;
+    color: white;
+    
+}
+
+.label-1 {
+    display: flex;
+    margin-bottom: 1rem;
+    
+}
+
+.spaces {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+}
+
+.social-mediaIcons > *:nth-child(1) {
+    background-color: rgb(237, 23, 23);
+    padding: 12px;
+    color: white;
+    width: 3rem;
+    height: 6vh;
+    border-radius: 5px;
+  }
+
+.social-mediaIcons > *:nth-child(2) {
+    background-color: #3B5998;
+    padding: 12px;
+    color: white;
+    width: 3rem;
+    height: 6vh;
+    border-radius: 5px;
+  }
+
+.social-mediaIcons > *:nth-child(3) {
+    background-color: #1DA1F2;
+    padding: 12px;
+    color: white;
+    width: 3rem;
+    height: 6vh;
+    border-radius: 5px;
+  }
+
+.social-mediaIcons > *:nth-child(4) {
+    background-color: #0077B5;
+    padding: 12px;
+    color: white;
+    width: 3rem;
+    height: 6vh;
+    border-radius: 5px;
+  }
+
+.social-mediaIcons {
+    display: flex;
+    gap: 10px;
+}
+
+.logAccount {
+    font-size: small;
+    font-weight: 600;
+    color: grey;
+}
+
+.password-reset {
+    font-size: small;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    opacity: 60%;
+    margin-top: 10px;
+}
+
+.submission-btn {
+    width: 5.2rem;
+    background-color: rgb(93, 91, 91);
+    padding: 0.7rem 1rem;
+    color: white;
+    font-weight: 600;
+    font-size: 16px;
+    border-radius: 5px;
+}

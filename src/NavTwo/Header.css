@@ -171,7 +171,6 @@ section {
     }
 
     .Account ul {
-
         background-color: white;
         color: black;
         padding: 2rem;
@@ -179,7 +178,7 @@ section {
         position: absolute;
         z-index: 1;
     }
-};
+}
 
 
     

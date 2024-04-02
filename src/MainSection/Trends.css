@@ -7,14 +7,14 @@
         gap: 2rem;
         width: 55rem;
         min-width: 34.5rem;
-        margin-top: -155rem;  
+        margin-top: -142rem;  
         position: absolute;
         margin-left: 21rem;
         
     }
     
     .trend-head {
-        margin-left: 1rem;
+        margin-left: -1.5rem;
         background-color: rgb(21, 9, 55);
         color: white;
         padding: 0.7rem 1.5rem;
@@ -68,6 +68,7 @@
       height: 19rem;
       padding-bottom: 10rem; 
       background-color: whitesmoke; ;
+      
       
     }
     
@@ -154,7 +155,7 @@
         width: 79%;
         gap: 1rem;
         margin-right: -2rem;
-        margin-top: -128rem;
+        margin-top: -115rem;
     
     }
     .image-div-first-img {
@@ -244,7 +245,7 @@ a {
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
-    margin-top: -150rem;
+    margin-top: -85rem;
     margin-left: -1rem;
     width: 70rem;
     gap: 20px;

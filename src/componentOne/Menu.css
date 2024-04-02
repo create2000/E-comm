@@ -19,8 +19,12 @@
     margin-left: 5rem;
 }
 
-.Log span:hover {
+/* .Log span:hover {
     color: orangered;
+} */
+.sign-login:hover {
+    color: orangered;
+    cursor: pointer;
 }
 
 @media (min-width: 993px) {

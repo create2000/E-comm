@@ -5,9 +5,9 @@ import Collection from '../Nav/Collection.jsx';
 import Market from '../Nav/Marketplace.jsx';
 import Shop from '../Nav/Shop.jsx';
 import Pages from '../Nav/Pages.jsx';
-import Categories from '../NavTwo/Categories.jsx';
-import SectionOne from '../MainSection/SectionOne.jsx';
-import logo from "/src/assets/logo.png";
+// import Categories from '../NavTwo/Categories.jsx';
+// import SectionOne from '../MainSection/SectionOne.jsx';
+import logo from '../assets/logo.png' ;
 
 import { Link } from 'react-router-dom';
 import { FaLock } from "react-icons/fa6";
@@ -41,8 +41,7 @@ const Menu = () => {
     </div>
 
     <div>
-    < Categories /> 
-    < SectionOne /> 
+    {/*   */}
     </div>
     </>
       

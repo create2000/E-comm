@@ -2,10 +2,8 @@
     display: flex;
     flex-direction: row;
     position: absolute;
-    margin-top: -15rem;
-    
+    margin-top: -15rem;    
 }
-
 .image-containment img {
     color: black;
     position: relative;
@@ -13,11 +11,9 @@
     width: 11vw;
     height: 14vh; 
 }
-
 .image-containment img:hover {
     opacity: 80%;
 }
-
 .image-containment {
     display: flex;
     flex-direction: row;
@@ -42,8 +38,7 @@
 }
 
 .left-arrow{
-    margin-left: 2rem;
-    
+    margin-left: 2rem;   
 }
 
 .text-span {
@@ -72,8 +67,6 @@
     width: 19rem;
 
 }
-
-
 
 .product-2 {
     display: flex;
@@ -116,8 +109,7 @@
     font-weight: 900;
     font-family: Tahoma, sans-serif;
     letter-spacing: 1px;
-   
-    
+       
 }
 
 .most-viewed-arr {
@@ -125,7 +117,7 @@
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    margin-top: 70rem;
+    margin-top: 55rem;
     
 }
 
@@ -154,7 +146,6 @@
     background-color: gray;
     opacity: 10%;
     margin-left: 14.2rem;
- 
 }
 
 .signUp {
@@ -249,9 +240,7 @@
 
     .signUp {
         justify-content: center;
-        flex-direction: column;
-        
-       
+        flex-direction: column;    
     }
 
     .pipe {
@@ -430,6 +419,7 @@
     .productPrice {
         margin-left: -9rem;
     }
+
     .productName {
         font-size: 14px;
         color: black;

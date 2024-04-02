@@ -1,6 +1,6 @@
 import { useState } from 'react';
 // import { Link } from 'react-router-dom';
-import { PiIdentificationCardThin } from "react-icons/pi";
+import { LiaIdCardSolid } from "react-icons/lia";
 import { ImCancelCircle } from "react-icons/im";
 import { FaRegUser } from "react-icons/fa6";
 import { IoKeyOutline } from "react-icons/io5";
@@ -12,6 +12,12 @@ import './Login.css';
 
 export default function LoginForm() {
 
+
+  const [State, setState] = useState(true);
+
+  const clickItem = () => {
+    setState(false);
+  }
   const [formData, setFormData] = useState({
     firstName: '',
     lastName: '',
@@ -42,66 +48,89 @@ export default function LoginForm() {
   
   return (
     <>
-    <div>
+    {State && (
+
+    <div className="modal-overlay">
+  
+    <div className='general-login'>
+
+      <div className="login">
       <div className="login-header">
-        <PiIdentificationCardThin className='dasboard' />
+        <LiaIdCardSolid className='dashboard' />
         <p className='dashboard-paragraph'>SIGN IN OR REGISTER</p>
-        <ImCancelCircle className='dashboard-cancel'/>
+      {State && <ImCancelCircle className='dashboard-cancel' onClick={clickItem} />}
       </div>
 
       <div className="login-form">
-
       <form onSubmit={handleSubmit}>
+
+      <div className="label-1">
       <label>
-      <FaRegUser />
-        Email:
+      <FaRegUser className='RegUser'/>
         <input
           type="text"
           name="email"
+          placeholder='Email address'
           value={formData.email}
           onChange={handleChange}
-        />
+          />
       </label>
       <br />
+    </div>
+
+    <div className="label-2">
+
       <label>
-      <IoKeyOutline />
-        Password:
+      <IoKeyOutline className='RegUser' />
         <input
           type="alphanumeric"
           name="password"
+          placeholder='password'
           value={formData.lastName}
           onChange={handleChange}
         />
       </label>
+    </div>
       <br />
 
-      <p>Login with your social account</p>
-      <FaGoogle />
-      <FaFacebookF />
-      <BsTwitterX />
-      <FaLinkedinIn />
+    <div className="spaces">
 
-      <p>Forgot your password?</p>
+      <p className='logAccount'>Login with your social account</p>
+      <div className="social-mediaIcons">
+
+        <FaGoogle />
+        <FaFacebookF />
+        <BsTwitterX />
+        <FaLinkedinIn />
+
+      </div>
+      <p className='password-reset'>Forgot your password?</p>
   
-      <button type="submit">LOGIN</button>
+      <button type="submit" className='submission-btn'>LOGIN</button>
+    </div>
     </form>
   </div>
+</div>
+      <div className="vertical-rule"></div>
+
 
 
     <div className="Register-side">
       <h4>NEW HERE?</h4>
       <p>Registration is free and easy</p>
-      <ul>
+      <ul className='list'>
         <li>Faster checkout</li>
         <li>Save multiple shipping addresses</li>
         <li>View and track orders and more</li>
       </ul>
 
-      <button className='account-creation'>CREATE AN ACCOUNT</button>
+      <button className='create-An-Account'>CREATE AN ACCOUNT</button>
     </div>
 
 
     </div>
+    </div>
+      )}
     </>
   )
   

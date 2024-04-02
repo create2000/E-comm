@@ -24,9 +24,8 @@ function Overcast() {
       <>
       {showdropdown && (
          
-          <div className="overlay-one">
-    <div className='overlay'>
-        
+<div className="overlay-one">
+    <div className='overlay'>        
       <span className='newsletter-close-btn'><IoCloseSharp  onClick={handleClose}/></span> 
         <img src={loadImage} alt="" />
         <div className="overlay-text">
