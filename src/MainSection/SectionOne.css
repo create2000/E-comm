@@ -94,11 +94,12 @@
 
 @media (max-width: 991px) {
 
+
 .design-card {
     margin-top: 2rem ;
     margin-left: 5rem;
     width: 14rem;
-    position: absolute;
+   
 }
 .Gift-card {
     display: none;
@@ -109,7 +110,7 @@
     flex-shrink: none;
     flex-direction: column;
     gap: 2rem;
-    margin-top: 2rem;
+    margin-top: -26rem;
     margin-left: 2rem;
 }
 

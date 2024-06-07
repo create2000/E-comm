@@ -6,9 +6,10 @@ import deal from "/src/assets/Deal-2.webp";
 import dealOne from "/src/assets/Deal-3.webp";
 import dealTwo from "/src/assets/Deal-4.webp";
 import banner7 from "/src/assets/banner7.jpg";
+import Hover from '../Others/Hover';
 
 function Deals() {
-
+  
   const [currentSlide, setCurrentSlide] = useState(0);
   const slidesRef = useRef([]);
 
@@ -69,14 +70,17 @@ useEffect(() => {
 
       <div className="slideshow-container">
        <div className={`deal-container ${currentSlide === 1 ? 'active' : ''}`} ref={(el) => (slidesRef.current[1] = el)}>
-      
        <div className= "Deal-two">
+          
         <div className="onah">
+        
+
           <img src={deal} 
           alt="" 
           className='Deal-one-img'
           onLoad={() => handleImageLoad(1)}
           ref={(el) => (slidesRef.current[1] = el)}
+         
           />
           </div>
           

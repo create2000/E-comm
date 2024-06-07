@@ -148,7 +148,6 @@
     font-size: smaller;
 }
 
-
 .Deal-two {
     margin-top: 9rem;
     display: flex;
@@ -184,8 +183,8 @@
     height: 100%;
     opacity: 0;
     transition: opacity 0.5s ease;
-    
   }
+
   
   .deal-container.active {
     opacity: 1;
@@ -212,7 +211,7 @@
 }
 
 .All-deal {
-    margin-top: 20rem;
+    margin-top: 8rem;
     color: black;
     
     
@@ -248,7 +247,7 @@
 .Deal-text {
     display: flex;
     flex-direction: column;
-    margin-left: 47rem;
+    margin-left: 49rem;
     min-width: 12vw;
     position: absolute;
     margin-top: 1rem;
@@ -363,6 +362,7 @@
     align-items: center;
     margin-left: -7rem;
     
+    
 }
 
 .Deal-three {
@@ -447,12 +447,7 @@
         left: -rem;
         
     }
-    .onah {
-       
-        
-        
-        
-    }
+
 
     .Deal-text {
        
@@ -481,9 +476,7 @@
         margin-left: -7rem;
         /* box-shadow: 2px 2px 8px rgba(0, 0, 0, 0.5); */
     }
-    .deal-container {
-        
-    }
+    
     .empty-span {
         max-width: 25rem;
     }

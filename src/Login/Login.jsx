@@ -1,5 +1,5 @@
 import { useState } from 'react';
-// import { Link } from 'react-router-dom';
+import {useNavigate, Link} from 'react-router-dom'
 import { LiaIdCardSolid } from "react-icons/lia";
 import { ImCancelCircle } from "react-icons/im";
 import { FaRegUser } from "react-icons/fa6";
@@ -11,17 +11,17 @@ import { FaLinkedinIn } from "react-icons/fa";
 import './Login.css';
 
 export default function LoginForm() {
-
+  const navigate = useNavigate();
 
   const [State, setState] = useState(true);
 
   const clickItem = () => {
-    setState(false);
+    navigate('/')
+    // setState(false);
   }
   const [formData, setFormData] = useState({
-    firstName: '',
-    lastName: '',
-    email: ''
+    email: '',
+    password: ''
   });
 
   // Function to handle form input changes
@@ -34,18 +34,33 @@ export default function LoginForm() {
   };
 
   // Function to handle form submission
-  const handleSubmit = (event) => {
+  const handleSubmit = async (event) => {
     event.preventDefault();
-    // Process form data, e.g., send it to a server
-    console.log(formData);
-    // Reset form fields
-    setFormData({
-      firstName: '',
-      lastName: '',
-      email: ''
-    });
-  };
-  
+    
+    try {
+      // Send form data to backend server
+      const response = await fetch('http://localhost:3000/login', {
+          method: 'POST',
+          headers: {
+              'Content-Type': 'application/json'
+          },
+          body: JSON.stringify(formData)
+      });
+
+      if (response.ok) {
+          console.log('User logged in successfully');
+          navigate('/')
+          // Optionally, redirect to another page or show a success message
+      } else {
+          console.error('Failed to login user');
+          // Handle error
+      }
+  } catch (error) {
+      console.error('Error:', error);
+      // Handle error
+  }
+};
+
   return (
     <>
     {State && (
@@ -58,7 +73,9 @@ export default function LoginForm() {
       <div className="login-header">
         <LiaIdCardSolid className='dashboard' />
         <p className='dashboard-paragraph'>SIGN IN OR REGISTER</p>
-      {State && <ImCancelCircle className='dashboard-cancel' onClick={clickItem} />}
+      {State && <ImCancelCircle className='dashboard-cancel' onClick={clickItem}
+      
+      />}
       </div>
 
       <div className="login-form">
@@ -112,9 +129,7 @@ export default function LoginForm() {
   </div>
 </div>
       <div className="vertical-rule"></div>
-
-
-
+      
     <div className="Register-side">
       <h4>NEW HERE?</h4>
       <p>Registration is free and easy</p>
@@ -124,7 +139,7 @@ export default function LoginForm() {
         <li>View and track orders and more</li>
       </ul>
 
-      <button className='create-An-Account'>CREATE AN ACCOUNT</button>
+      <button className='create-An-Account'> <Link to = "/Register" > CREATE AN ACCOUNT </Link></button>
     </div>
 
 

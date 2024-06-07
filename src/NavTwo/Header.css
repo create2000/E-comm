@@ -9,7 +9,7 @@ section {
 }
 
 
-@media (max-width:480px) {
+@media (  max-width:480px) {
     .Header-paragraph {
        display: none ;        
     }
@@ -19,6 +19,7 @@ section {
     }
 
     .Account  {
+        display: block;
         margin-left: -4rem;
         
     }
@@ -28,8 +29,8 @@ section {
     }
 
     .Header-span {
-        margin-left: 16rem !important;
-        width: 13rem;
+        margin-left: 8rem !important;
+        
     }
 
     .Header-one {
@@ -40,6 +41,20 @@ section {
         margin-left: -1.5rem;
         
     }
+
+    .dropdown-content li {
+        color: black;
+        padding: 8px 8px;
+        text-decoration: none;
+        display: block;
+        cursor: pointer;
+        font-size: smaller;
+      }
+    .dropdown-content {
+        padding: 0px;
+    }
+
+    
        
 }
     
@@ -130,7 +145,6 @@ section {
     display: none;
     position: absolute;
     background-color: #f1f1f1;
-    min-width: 160px;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
 }
@@ -178,7 +192,23 @@ section {
         position: absolute;
         z-index: 1;
     }
+
+    
+    .Account  {
+        display: block;
+        margin-left: 4rem;
+        
+    }
+
+    .second-dropdown-content li,
+    .dropdown-content li {
+    font-size: 14px;
+
+    
+}
+section {
+    height: 23vh;
 }
 
 
-    
+}

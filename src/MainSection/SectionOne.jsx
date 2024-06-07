@@ -35,7 +35,8 @@ function SectionOne() {
   
   return (
       <>
-   
+   <div className="General-slide">
+
     <img src= {interiorDesign} alt="" className='design-card' />
     <div className='image-slide'>
       <img
@@ -44,7 +45,7 @@ function SectionOne() {
         className='Slide'
         onLoad={handleImageLoad(0)}
         ref={(el) => (slidesRef.current[0] = el)}
-      />
+        />
       <img
         src={Slide2}
         alt=""
@@ -67,6 +68,7 @@ function SectionOne() {
     </div>
 
     <img src={Gift} alt="" className='Gift-card' />
+        </div>
     </>
   );
 }

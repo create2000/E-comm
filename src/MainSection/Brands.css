@@ -265,13 +265,15 @@
     }
 
     .most-viewed-arr{
+        
         margin-bottom: -19rem ;
+        margin-top: 66rem;
         margin-left: 5.4rem;
         z-index: 1;
         
     }
 
-.button-next{
+    .button-next{
     margin-right: 7rem;
 }
 

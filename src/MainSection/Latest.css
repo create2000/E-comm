@@ -504,6 +504,7 @@
     float: left;
     margin-left: 4.5rem;
     margin-top: 2rem;
+    margin-bottom: 1rem;
     width: 25.5vw;
     height: 52vh;
 }
@@ -514,7 +515,7 @@
 
 .blog {
     color: black;
-    margin-top: 75rem;
+    margin-top: 60rem;
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -539,9 +540,6 @@
     align-items: center;
     color: black;
     width: 14rem;
-    
-    
-
 }
 
 .news-img {
@@ -552,11 +550,11 @@
 }
 
 .newsletter-txt {
-   margin-right: -8rem;
+   margin-left: 3rem;
    margin-top: 1rem;
    font-size: 15px;
    font-weight: 600;
-   width: 14rem;
+   width: auto;
    
 }
 
@@ -579,6 +577,7 @@
     margin-left: 4rem;
     font-weight: 600;
 }
+
 
 .top-rated-row {
     display: flex;

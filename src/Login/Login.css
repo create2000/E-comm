@@ -22,8 +22,18 @@
     position: fixed;
     top: 175px; /* Adjust for desired position */
     left: 315px; /* Adjust for desired position */
+    position: absolute;
+    animation-name: login;
+    animation-duration: 2s;
+    animation-fill-mode: forwards;
+    animation-timing-function: ease-out;
     
 }
+
+@keyframes login {
+    0%  {top: -500px;}
+    100% {top: 150px;}
+  }
 
 .login {
     display: flex;

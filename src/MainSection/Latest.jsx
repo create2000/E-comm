@@ -7,10 +7,7 @@ import { FaShieldHalved } from "react-icons/fa6";
 import { FaGift } from "react-icons/fa6";
 import { FaRegMoneyBillAlt } from "react-icons/fa";
 import { FaRegCalendarAlt } from "react-icons/fa";
-import deal5 from "/src/assets/Deal-5.webp";
-import deal4 from "/src/assets/Deal-4.webp";
-import deal3 from "/src/assets/Deal-3.webp";
-import deal2 from "/src/assets/Deal-2.webp";
+import deals from './data.jsx';
 import armchair from "/src/assets/Armchair.jpg"; 
 import lector from "/src/assets/lector.webp";
 import priodent from "/src/assets/Priodent.webp";
@@ -33,8 +30,17 @@ function Latest() {
         <hr className='hr-rule' />
         
         <div className='prod-col'>
-        <div className='prod-1'>
-            <img src={deal5} alt="" />
+        {deals.map((deal, index) => (
+          <div className='prod-1' key={index}>
+            <img src={deal.image} alt="" />
+            <div className="prod-1-txt">
+              <p className='Balltip'>{deal.title}</p>
+              <span className='star-icons'>{Array(deal.stars).fill().map((_, i) => <ImStarEmpty key={i} />)}</span>
+              <p> <span className='prod-one-span'>$55.00</span> <span className='prod-two-span'>$65.00</span></p>
+            </div>
+          </div>
+            ))}
+            {/* <img src={deal5} alt="" />
             <div className="prod-1-txt">
                 <p className='Balltip'>Balltip Nullaelit</p>
                 <span className='star-icons'><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /></span>
@@ -77,8 +83,9 @@ function Latest() {
                 <span className='star-icons'><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /><ImStarEmpty /></span>
                 <p> <span className='prod-one-span'>$55.00</span> <span className='prod-two-span'>$65.00</span></p>
 
-            </div>
-        </div>
+            </div> */}
+
+
 
         <div className='second-sect'>
             
@@ -121,7 +128,8 @@ function Latest() {
         </div>
         
 
-    </div>
+        </div>
+    
 
     <div>
         <img src= {armchair} alt=""  className='armchair'/>
@@ -135,9 +143,7 @@ function Latest() {
 
     <div className="newsletter">
         <img src={lector} alt="" className='news-img' />
-
         <div className="newspaper-features">
-
          <p className='newsletter-txt'>Biten demons lector in vanderheit</p>
         <div className="newsletter-span-one">
         <FaRegCalendarAlt />

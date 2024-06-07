@@ -1,3 +1,4 @@
+
     .Trends {
         color: black;
         display: flex;
@@ -12,6 +13,14 @@
         margin-left: 21rem;
         
     }
+
+    .trend-list {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1rem;
+        
+    }
     
     .trend-head {
         margin-left: -1.5rem;
@@ -19,20 +28,8 @@
         color: white;
         padding: 0.7rem 1.5rem;
     }
-    
-        /* .Array-list-vertical {
-        display: block;
-        color: black;
-        margin-left: 0.5rem;
-        color: gray; 
-    } */
 
-    /* .Array-list-horizontal {
-        display: flex;
-        list-style-type: none;
-        padding: 0;
-    }  */
-    
+
     .Array-list {
         color: gray;
     } 
@@ -57,6 +54,8 @@
     .red {
         color: red;
     }
+
+    
     
     .image-container {
       display: flex;  
@@ -124,19 +123,11 @@
         width: 10rem;
         height: 10rem;
         margin-left: 0.5rem;
+        position: absolute;
         
     }
 
-    .image-div-first-img,
-    .image-div-second-img {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%; 
-    height: 100%; 
-    transition: opacity 0.9s ease;
     
-}
         
 .image-container img:nth-child(1) {
         opacity: 1; 
@@ -156,6 +147,7 @@
         gap: 1rem;
         margin-right: -2rem;
         margin-top: -115rem;
+    
     
     }
     .image-div-first-img {
@@ -186,6 +178,7 @@
 
 .side-icons:hover {
     cursor: pointer;
+   
 }
 
 a {
@@ -251,6 +244,139 @@ a {
     gap: 20px;
    
 }
+ .hamburg {
+    display: flex;
+    flex-direction: row;
+    gap: 0.7rem;
+    align-items: center;
+    
+}
+
+.hamburg:hover {
+    background-color: rgb(177, 56, 12);
+}
+.hamburg p {
+    color: white;
+    font-size: 14px;
+    margin-left: -5rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+}
+.burgerKing {
+    margin-right: 0.5rem;
+}
+
+ .hamburg-2 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;    
+}
+.hamburg-2:hover {
+    background-color: rgb(177, 56, 12);
+}
+.hamburg-2 p {
+    color: white;
+    font-size: 14px;
+    margin-left: -2.5rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+}
+.burgerKing-2 {
+    margin-right: 0.5rem;
+} 
+
+
+.hamburg-3 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;    
+}
+.hamburg-3:hover {
+    background-color: rgb(177, 56, 12);
+}
+.Partey {
+    color: white;
+    font-size: 14px;
+    margin-left: -3.8rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+}
+.burgerKing-3 {
+    margin-right: 0.5rem;
+}
+
+
+.hamburg-4 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;    
+}
+.hamburg-4:hover {
+    background-color: rgb(177, 56, 12);
+}
+.Odegaard {
+    color: white;
+    font-size: 14px;
+    margin-left: -3.5rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+}
+.burgerKing-4 {
+    margin-right: 0.5rem;
+}
+
+
+.hamburg-5 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
+    height:2.5rem ;    
+}
+.hamburg-5:hover {
+    background-color: rgb(177, 56, 12);
+    height: 2.5rem;
+}
+.Suarez {
+    color: white;
+    font-size: 14px;
+    margin-left: -6rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+    width: 6rem;
+    height: 2.5rem;
+}
+.burgerKing-5 {
+    margin-right: 0.5rem;
+} 
+
+.hamburg-6 {
+    display: flex;
+    flex-direction: row;
+    gap: 0.6rem;
+    align-items: center;
+    height:2.5rem ;    
+}
+.hamburg-6:hover {
+    background-color: rgb(177, 56, 12);
+    height: 2.5rem;
+}
+.Saka {
+    color: white;
+    font-size: 14px;
+    margin-left: -6rem;
+    background-color: orangered;
+    padding: 0.6rem 0.2rem 0.7rem 0.6rem;
+    width: 6rem;
+    height: 2.5rem;
+}
+.burgerKing-6 {
+    margin-right: 0.5rem;
+} 
+
 
 
 @media only screen and (min-width: 776px) and (max-width: 991px) {
@@ -264,11 +390,17 @@ a {
     gap: 2rem;
     width: 35.3rem;
     min-width: 34.5rem;
-    margin-top: -145rem;  
+    margin-top: -143rem;  
     position: absolute;
       
 }
+.trend-list {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 1rem;
     
+}
 .text {
     background-color: red;
     opacity: 100;
@@ -284,10 +416,14 @@ a {
     
 .trend-input {
     width: 12rem;
+    height: 4vh;
+    margin-top: 1.2rem;
+    background-color: rgb(236, 235, 235);
     margin-right: 0rem;
     font-size: 15px;
-
 }
+
+
     
 .dr-arrow {
     background-color: rgb(201, 195, 195);
@@ -304,6 +440,7 @@ a {
     align-items: center;
     margin-top: 21rem;
     margin-right: 1.5rem; 
+    
         
 }
 .Array-list {
@@ -339,68 +476,48 @@ a {
 }
     
 .image-container {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap; 
     width: 11rem;
-    justify-content: space-between;
     position: relative;    
     height: 19rem;
-    padding-bottom: 10rem; 
-    background-color: whitesmoke; ;
-    
-        
+    background-color: whitesmoke;
+    display: flex;
+    align-items: center; /* Vertically center content */
+    justify-content: center; /* Horizontally center content */
 }
-      
-.star-span {
-    color: rgb(194, 192, 192);   
-    margin-left: 3.5rem; 
-    font-size: smaller;    
-    gap: 1rem;
-    position: 'absolute';
-    top: 0;
-    left: 0; 
-    z-Index: 1;
-    cursor: pointer; 
 
+.innertext {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center content horizontally */
+    justify-content: center; /* Center content vertically */
+    margin-right: 1.8rem;
+    margin-top: 3rem;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
 }
-  
-.hello-span {
-    color: black; 
-    margin-left: 4.1rem;
-    color: rgb(237, 126, 86);
-    font-weight: 700;
-    position: 'absolute'; 
-    top: 0; 
-    left: 0; 
-    z-Index: 1;
-    cursor:pointer; 
 
-}
-  
 .hello {
     color: black;
-    font-size: 20px;
-    z-index: 1;
     font-size: 15px;
-    margin-left: 2rem;
-    margin-top: 12rem;
-    position: 'absolute';
-    top: 0;
-    left: 0;
-    z-Index: 1;
     cursor: pointer;
+    text-align: center; /* Center text inside the <p> */
 }
-  
-.innertext {
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
-      gap: 10px;
-      margin-top: 0rem;
-      
 
- }
+.star-span {
+    color: rgb(194, 192, 192);   
+    font-size: smaller;    
+    gap: 1rem;
+    cursor: pointer; 
+    margin-right: 1.5rem;
+}
+
+.hello-span {
+    color: rgb(237, 126, 86);
+    font-weight: 700;
+    cursor: pointer; 
+    margin-right: 1.5rem;
+}
             
 .image-container img {
     width: 10rem;

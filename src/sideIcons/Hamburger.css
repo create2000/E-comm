@@ -1,0 +1,89 @@
+.gen-burger {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: none; 
+}
+
+.gen-burger.show {
+    display: block; 
+}
+.Burger {
+    position: fixed;
+    top: 50px; /* Adjust for desired position */
+    left: 355px; /* Adjust for desired position */
+    width: 45%;
+    height: 85%;
+    background-color: whitesmoke;
+    z-index: 999; 
+    overflow-y: scroll;
+    color: rgb(67, 65, 65);
+}
+
+.Burger-one {
+    display: flex;
+    flex-direction: row;
+    background-color: orangered;
+    color: white;
+    gap: 1rem;
+    align-items: center;
+    height: 12vh;
+    padding-left: 3rem;
+    padding-right: 3rem;
+}
+
+.Burger-icon-h4 {
+    margin-top: 5px;
+}
+.Burger-icon-one,
+.Burger-icon-two {
+    font-size: larger;
+}
+
+.Burger-two {
+    display: flex;
+    flex-direction: row;
+    gap: 17rem;
+}
+
+.Burger-list-items {
+    margin-left: 3rem;
+    max-height: 400px;
+    overflow-y: auto;
+}
+.Burger-list-items hr {
+    height: 1px;
+    width: 30rem;
+    background-color: #808080;
+    opacity: 20%;
+    margin-top: 1rem;
+    margin-bottom: -1rem;
+
+}
+
+.openMenu {
+    float: right;
+    margin-right: 4rem;
+    opacity: 40%;
+}
+
+.Burger-list-items li {
+    font-size: 14px;
+    margin-top: 1.5rem;
+    
+    
+}
+
+.Burger-list-items li:hover {
+    color: orangered;
+    cursor: pointer;
+}
+
+.Burger-dropdown li {
+    list-style-type: disc;
+    color: rgb(142, 138, 138);
+}

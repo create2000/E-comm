@@ -6,7 +6,7 @@
     
 }
 
-.account-creation {
+.account-create {
     display: flex;
     flex-direction: column;
     gap: 1rem;
@@ -101,7 +101,7 @@
     float: right;
 }
 .submit button {
-    background-color: rgb(158, 154, 154);
+    /* background-color: rgb(158, 154, 154); */
     color: white;
     padding: 0.7rem 1.2rem;
     border-radius: 4px;
@@ -116,11 +116,32 @@
 .submit span:hover {
     color: orangered;
 } 
+
+.navigation-item {
+    width: auto;
+    position: relative;
+    color: rgb(146, 142, 142);
+  }
+  
+  .navigation-item:hover {
+    background-color: rgb(234, 228, 228);
+    cursor: pointer;
+  }
+  
+  .navigation-divider {
+    height: 1px;
+    width: 15rem;
+    color: gray;
+    background-color: gray;
+    opacity: 20%;
+    margin-left: -10px;
+  }
+  
 .mapped-array {
     display: flex;
     flex-direction: column;
-    gap: 1rem;
-    color: rgb(98, 94, 94);
+    gap: 0.5rem;
+    color: rgb(0, 0, 0);
     margin-top: 3rem;
     border: 1px solid rgba(0, 0, 0, 0.1);
     box-shadow: 5px 5px 5px 5px rgba(0, 0, 0, 0.1);
@@ -129,6 +150,8 @@
     padding-top: 1rem;
     font-size: 14px;
 }
+
+/*
 .mapped-array li {
     width: auto;
     position: relative;
@@ -148,7 +171,7 @@
     margin-left: -10px;
    
 
-}
+} */
 
 .Registration {
     display: flex; 

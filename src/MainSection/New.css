@@ -261,7 +261,10 @@ margin-left: 5rem;
 .trend-input-two {
     width: 12rem;
     margin-right: 0rem;
+    height: 4vh;
+    margin-top: 1.2rem;
     font-size: 15px;
+    background-color: rgb(224, 221, 221);
 
 }
     

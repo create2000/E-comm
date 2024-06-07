@@ -141,7 +141,7 @@ const Categories = () => {
   </div>
 
    <div className="side-menu" >
-   <HiMenu onClick={toggleVisible} className='HiMenu'/>
+   <GiHamburgerMenu onClick={toggleVisible} className='HiMenu'/>
    {isVisible && (
    <div className="side-menu-list">
     <RiCloseFill  onClick={toggleClose} className='close'/>

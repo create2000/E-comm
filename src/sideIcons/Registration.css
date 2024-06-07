@@ -1,0 +1,62 @@
+.Gen-regEye {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.4);
+    z-index: 999;
+    display: none; 
+}
+
+.Gen-regEye.show {
+    display: block; 
+}
+
+.regEye {
+    position: fixed;
+    top: 230px; 
+    left: 355px;    
+    width: 40%;
+    height: 30%;
+    background-color: whitesmoke;
+    z-index: 999; 
+    color: black;
+}
+
+.regEye-1 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+    padding: 0.7rem 1rem 0.7rem 3rem;
+    background-color: orangered;
+    height: 11vh;
+    width: auto;
+    color: white;
+
+}
+
+.close-regEye {
+    margin-left: 12rem;
+    font-weight: 900;
+}
+
+.regEye-p {
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.regEye-2 {
+    color: black; 
+    padding: 2.5rem 3rem;
+    margin: 0 auto;
+    align-items: center;
+
+}
+
+.regEye-p-2 {
+    font-size: 15px;
+    font-family:  Georgia, Times, 'Times New Roman', serif;
+    opacity: 50%;
+}

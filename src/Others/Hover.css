@@ -1,0 +1,92 @@
+.hoverItems {
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    height: 200px;
+    margin-left: 1rem;
+    margin-top: 20px;
+    width: auto;
+    z-index: 1;
+    background-color: blue;
+}
+
+.hoverItem1, .hoverItem2, .hoverItem3, .hoverItem4 {
+    display: flex;
+    color: #000;
+    align-items: center;
+    margin-left: 1rem;
+    gap: -1px;
+    
+}
+
+.hoverItem1 {
+    position: relative;
+    animation: position 0.4s forwards  ;
+}
+.hoverItem2 {
+    position: relative;
+    animation: position 0.6s forwards ;
+}
+.hoverItem3 {
+    position: relative;
+    animation: position 0.8s forwards ;
+}
+.hoverItem4 {
+    position: relative;
+    animation: position 1s forwards ;
+}
+
+
+.hover-img {
+    font-size: 2rem;
+    background-color: #716f6f;
+    color: #fff;
+    padding: 6px 8px;
+    border-radius: 4px;
+
+}
+@keyframes position {
+    from {
+        left: -100px; 
+    }
+    to {
+        left: 0; 
+    }
+}
+
+.hover-img:hover {
+    background-color: orangered;
+}
+
+.hoverItem1, .hoverItem2, .hoverItem3, .hoverItem4 p {
+    font-size: 12px;
+    color: #fff;
+    
+    
+
+}
+
+
+.hide {
+    display: none;
+}
+
+.show {
+    display:block;
+    animation: fadeIn 1s forwards;
+    background-color: orangered;
+    width: auto;
+    padding: 8px 12px;
+    border-radius: 3px;
+
+}
+
+
+@keyframes fadeIn {
+    from {
+        opacity: 0; 
+    }
+    to {
+        opacity: 1; 
+    }
+}
