@@ -11,7 +11,7 @@ function Search() {
       }
   return (
     <>
-    <div className= {`General-search ${isMenuOpen ? 'show' : ''}`}>
+    <div className= {`general-search ${isMenuOpen ? 'show' : ''}`}>
 
     {isMenuOpen && (
         

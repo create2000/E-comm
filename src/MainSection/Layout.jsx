@@ -1,22 +1,7 @@
-// import React from 'react'
-// 
-
-
-// function Layout ({children}) {
-//   return (
-//     <div>
-//     < Header/>
-//       {children}
-//       < Brands/>
-//     </div>
-//   )
-// }
-
-// export default Layout
-
 import React from 'react';
 import Header from '../NavTwo/Header';
 import Brands from '../MainSection/Brands';
+
 import PropTypes from 'prop-types';
 import Hover from '../Others/Hover';
 import './Layout.css'

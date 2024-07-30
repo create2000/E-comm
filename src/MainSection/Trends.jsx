@@ -50,7 +50,11 @@ function Trends() {
     { id: 3, name: 'Meatloa curella', price: '$80.00', image: store7, image2: store6 },
     { id: 4, name: 'Bedside Lamp', price: '$60.00', image: store10, image2: store8 },
     { id: 5, name: 'Flower Vase', price: '$25.60', image: Deal3, image2: store2 },
-    { id: 6, name: 'Livingroom Sofa', price: '$10.00', image: Deal4, image2: Deal5 },
+    { id: 6, name: 'Livingroom Sofa', price: '$10.00', image: store3, image2: store5 },
+    { id: 7, name: 'Livingroom Sofa', price: '$10.00', image: store8, image2: store9 },
+    { id: 8, name: 'Livingroom Sofa', price: '$10.00', image: Deal4, image2: Deal5 },
+    { id: 9, name: 'Livingroom Sofa', price: '$10.00', image: store6, image2:Deal4  },
+    { id: 10, name: 'Livingroom Sofa', price: '$10.00', image: store2, image2: Deal3 },
   ];
 
   const [showArray, setShowArray] = useState(false);
@@ -112,12 +116,20 @@ function Trends() {
     setShowArray(false);
   };
 
-  const scrollToTop = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: 'smooth'
-    });
-  };
+    const smoothScrollToTop = () => {
+      const scrollDuration = 100; // Duration in milliseconds
+      const scrollHeight = window.scrollY;
+      const scrollStep = scrollHeight / (scrollDuration / 15.67); // 16.67ms per frame (60fps)
+  
+      const scrollStepFunction = () => {
+        if (window.scrollY > 0) {
+          window.scrollBy(0, -scrollStep);
+          requestAnimationFrame(scrollStepFunction);
+        }
+      };
+  
+      requestAnimationFrame(scrollStepFunction);
+    };
 
   return (
     <>
@@ -199,34 +211,39 @@ function Trends() {
         </div>
         <hr className='side-hr' />
         <div className="hamburg-2" onMouseEnter={() => setCartHover(true)} onMouseLeave={() => setCartHover(false)}>
-          <p style={{ visibility: cartHover ? 'visible' : 'hidden' }}>Cart</p>
+          <p className='hamburg-2-p' style={{ visibility: cartHover ? 'visible' : 'hidden' }}>Cart</p>
           <FaShoppingCart className="burgerKing-2" onClick={toggleShoppingCart} />
           {isShoppingCartOpen && <ShoppingCart />}
         </div>
         <hr className='side-hr' />
         <div className="hamburg-3" onMouseEnter={() => setIsRegistered(true)} onMouseLeave={() => setIsRegistered(false)}>
-          <p style={{ visibility: isRegistered ? 'visible' : 'hidden' }}>Register</p>
+          <p className='hamburg-3-p' style={{ visibility: isRegistered ? 'visible' : 'hidden' }}>Register</p>
           <FaUser className="burgerKing-3" onClick={toggleUser} />
           {isUserOpen && <User />}
         </div>
         <hr className='side-hr' />
         <div className="hamburg-4" onMouseEnter={() => setIsSearching(true)} onMouseLeave={() => setIsSearching(false)}>
-          <p style={{ visibility: isSearching ? 'visible' : 'hidden' }}>Search</p>
+          <p className='hamburg-4-p' style={{ visibility: isSearching ? 'visible' : 'hidden' }}>Search</p>
           <FaSearch className="burgerKing-4" onClick={toggleSearch} />
           {isSearchOpen && <Search />}
         </div>
         <hr className='side-hr' />
         <div className="hamburg-5" onMouseEnter={() => setRecent(true)} onMouseLeave={() => setRecent(false)}>
-          <p style={{ visibility: isRecent ? 'visible' : 'hidden' }}>Sign Up</p>
+          <p className='hamburg-5-p' style={{ visibility: isRecent ? 'visible' : 'hidden' }}>Recent view</p>
           <FaRegEye className="burgerKing-5" onClick={toggleRegistration} />
           {isRegistrationOpen && <Registration />}
         </div>
+        <hr className='side-hr' />
+
+        <div className="hamburg-6" onMouseEnter={() => setIsTop (true)} onMouseLeave={() => setIsTop(false)}> 
+         <p className='hamburg-6-p' style={{ visibility: isTop ? 'visible' : 'hidden' }}>To top</p>
+        <MdKeyboardDoubleArrowUp onClick={smoothScrollToTop} className={`burgerKing-6 ${isTop ? 'show' : ''}`}/>
+        </div>
+         
+      
       </span>
       <New />
       <Overcast />
-      <button onClick={scrollToTop} className={`scroll-to-top ${isTop ? 'show' : ''}`}>
-        <MdKeyboardDoubleArrowUp />
-      </button>
     </>
   );
 }

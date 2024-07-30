@@ -1,0 +1,23 @@
+.breadcrumb-icon {
+    color: black ;
+    opacity: 50%;
+}
+.breadcrumb-text {
+    color: orangered;
+}
+.breadcrumb-link {
+    color: orangered;
+    margin-top: 3px;
+}
+.breadcrumb {
+    display: flex;
+    align-items: center;
+    margin-top: 1rem;
+    margin-left: 3.5rem;
+    font-size: 14px;
+
+}
+
+.breadcrumb-angle {
+    color: gray ;
+}

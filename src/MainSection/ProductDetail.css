@@ -1,0 +1,299 @@
+.prod-btn-1, .prod-btn-2 {
+    background-color: orangered;
+    min-width: 12rem;
+    padding: 15px 50px;
+    color: white;
+    font-size: 14px;
+    font-weight: 700;
+    border-radius: 3px;
+    margin: 10px;
+}
+
+.prod-btn-2 {
+    background-color: rgb(118, 162, 52);
+}
+
+.group-btns {
+    display: flex;
+    width: 450px;
+    
+   
+}
+
+
+.group-dr-arrow {
+    background-color: rgb(201, 195, 195);
+    font-size: 35px;
+    padding: 0.7rem;
+    margin-right: rem;
+    margin-top: 1.1rem;   
+
+}
+.group-trend-input {
+    width: 12rem;
+    height: 4vh;
+    margin-top: 1.2rem;
+    background-color: rgb(236, 235, 235);
+    margin-right: 0rem;
+    font-size: 15px;
+}
+
+.prod-description {
+    color: black;
+}
+
+.group-name span {
+    color: black;
+}
+
+.group-name {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.group-name-head {
+    color: black;
+}
+.prod-details-image {
+    position: relative;
+    overflow: hidden;
+  
+
+  }
+  
+.prod-details-span {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    opacity: 60%;
+    font-size: 14px;
+    margin-top: 0px;
+    
+}
+.two {
+    display: flex;
+    flex-direction: row;
+    
+    
+}
+.three {
+    margin-left: 7rem;
+}
+.three-one {
+    margin-left: 4.2rem;
+}
+.three-two {
+    margin-left: 3.7rem;
+}
+.three-three {
+    margin-left: 5.7rem;
+}
+.three-four {
+    margin-left: 6.5rem;
+}
+
+
+
+
+.call-price {
+    color: rgb(236, 66, 5);
+    
+}
+.options {
+    color: black;
+    font-size: 14px;
+    margin-top: 20px;
+    font-weight: 700;
+    opacity: 60%;
+}
+
+.increment {
+    display: flex;
+    flex-direction: row;
+    color: black;
+    
+
+}
+
+.increment span {
+    border: 1px solid black;   
+}
+  
+  .button-increment, .quantity {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 35px;  /* Ensure equal sizes */
+    height: 32px;  /* Ensure equal sizes */
+    border: 1px solid #ccc;
+    opacity: 50%;
+    margin: 0px;
+    background-color: #f0f0f0;
+  }
+  
+  .quantity {
+    background-color: white;
+    width: 40px; 
+    opacity:90%
+  }
+  .button-increment {
+    cursor: pointer;
+    font-weight: 800;
+    font-size: 13px;
+  }
+  
+  .button-increment:hover {
+    background-color: #d0cfcf;
+  }
+  
+.details-img {
+    height: 75vh;
+    width: 38vw;
+    margin-left: 2rem;
+    
+    
+}
+
+.group-input-arrow {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-top: 21rem;
+    margin-right: 1.5rem; 
+    
+        
+}
+.group-Array-list {
+    margin-left: 0.5rem;
+    color: gray; 
+    line-height: 5px;       
+}
+.group-Array-div ul {
+    display: flex;
+    flex-direction: column;
+    float: right;
+    justify-content: space-between; 
+    list-style: none;  
+    height: 15vh;     
+}
+.group-Aray-list:hover {
+    color: orangered;       
+}
+.group-Array-div {    
+    margin-top: 17rem;
+    position: absolute;
+    background-color: rgb(245, 244, 244);
+    padding: 1rem 8rem 1rem 1rem;
+    border: 1px light black;
+    box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.1);
+    border-top: none;
+    cursor: pointer;
+    z-index: 1;
+}
+    
+.red {
+    color: red;
+
+}
+.product-details {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin-top: 0rem;
+}
+
+.prod-details-list {
+    color: black;
+    background-color: rgb(232, 229, 229);
+    margin-left:3rem ;
+    border: 1px solid black;
+    min-width: 14rem;
+    
+}
+
+.prod-details-list li {
+    list-style-type: none;
+    margin-top: 0px;
+    font-size: 15px;
+    color: rgb(88, 84, 84); 
+    padding: 10px 20px 0px 20px ;
+    
+    
+}
+
+.prod-details-h3  {
+    background-color: rgb(237, 235, 235);
+    padding: 15px 20px;
+}
+.prod-details-list ul {
+    max-height: 650px ;
+    overflow-y: scroll;
+}
+.gallery-image {
+    width: 92px;
+    height: auto;
+    margin-left: 10px;
+    animation-name: slide;
+    animation-duration: 3s;
+}
+
+.gallery-image:hover {
+    border: 1px solid black;
+}
+
+.image-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    animation-name: slide;
+    position: relative;
+    margin-left: 10px;
+    
+  
+}
+
+.image-gallery:hover .angles button {
+    opacity: 1;
+  }
+
+.angles  {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    position: relative;
+    margin: 0 2rem;
+    
+}
+    
+.angles button {
+    font-size: 20px;
+    padding: 5px !important;
+    color: white;
+    
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+
+}
+
+.angles button:hover {
+    background-color: orangered;
+}
+
+.reviews{
+    font-size: 13px;
+    opacity: 40%;
+}
+.review-stars {
+    opacity: 40%;
+}
+.review-items {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.review-items .firestorm {
+    color: orangered;
+    font-size: 14px;
+    font-weight: 600;
+    
+}
+
